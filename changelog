@@ -1,0 +1,8 @@
+ChangeLog 1.0.0
+* Correção da Tradução da Pagina Backup/Restauração
+* Correção da Tradução da Pagina Gravações (download funcionando)
+* Correção da Tradução da Pagina Uso de Canais
+* Patch na Pagina Relatórios de Ligação com Status em Português
+* Patch na Pagina Billing Report para Calcular cadencia brasileira 30/6
+* Instalação do Audio em Português Brasileiro
+* Instalação do Codec g729 Free
