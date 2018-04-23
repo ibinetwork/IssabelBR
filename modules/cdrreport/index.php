@@ -294,7 +294,7 @@ function _moduleContent(&$smarty, $module_name)
                 $arrTmp[5] = $value[9];
                 $arrTmp[6] = $value[4];
                     if ($value[5] == "ANSWERED") {
-				            $value[5] = "<font color=green>ATENDIDO</font>";
+		    $value[5] = "<font color=green>ATENDIDO</font>";
 			              }
 			              elseif ($value[5] == "NO ANSWER") {
                     $value[5] = "<font color=red>NÃO ATENDIDO</font>";
