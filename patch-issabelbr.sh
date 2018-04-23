@@ -15,6 +15,6 @@ echo ""
 yum update -y
 echo ""
 echo "Instalando ferramentas úteis..."
-yum install mtr vim mlocate nmap tcpdump mc nano lynx -y
+yum install mtr vim mlocate nmap tcpdump mc nano lynx rsync -y
 updatedb
 echo ""
