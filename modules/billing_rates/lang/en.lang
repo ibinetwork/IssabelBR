@@ -1,0 +1,82 @@
+<?php
+  /* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+  Codificación: UTF-8
+  +----------------------------------------------------------------------+
+  | Issabel version 4.0.0-12                                               |
+  | http://www.issabel.org                                               |
+  +----------------------------------------------------------------------+
+  | Copyright (c) 2006 Palosanto Solutions S. A.                         |
+  +----------------------------------------------------------------------+
+  | The contents of this file are subject to the General Public License  |
+  | (GPL) Version 2 (the "License"); you may not use this file except in |
+  | compliance with the License. You may obtain a copy of the License at |
+  | http://www.opensource.org/licenses/gpl-license.php                   |
+  |                                                                      |
+  | Software distributed under the License is distributed on an "AS IS"  |
+  | basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+  | the License for the specific language governing rights and           |
+  | limitations under the License.                                       |
+  +----------------------------------------------------------------------+
+  | The Initial Developer of the Original Code is PaloSanto Solutions    |
+  +----------------------------------------------------------------------+
+  $Id: en.lang,v 1.1 2010-01-27 02:01:42 Eduardo Cueva ecueva@palosanto.com Exp $ */
+global $arrLangModule;
+$arrLangModule=array(
+"Billing Rates" => "Billing Rates",
+"Prefix" => "Prefix",
+"Rate" => "Rate",
+"Rate Offset" => "Rate Offset",
+"None" => "None",
+"New Rate"=>"New Rate",
+"Edit Rate"=>"Edit Rate",
+"View Rate"=>"View Rate",
+"View"=>"View",
+"Rates List"=>"Rates List",
+"(by min)" => " (by min)",
+"Trunk" => "Trunk",
+"Name" => "Name",
+"Are you sure you wish to continue?"=>"Are you sure you wish to continue?",
+"create_rate"=>"Create New Rate",
+"import_rate"=>"Import File",
+"Creation Date" => "Creation Date",
+"Closing Date" => "Closing Date",
+"Default" => "Default",
+"New_rate" => "New Rate",
+"CANCEL" => "Cancel",
+"SAVE" => "Save",
+"REQUIRED_FIELD" => "Required field",
+"EDIT" => "Edit",
+"DELETE" => "Delete",
+"Rate_offset" => "Rate offset",
+"Error_new" => "Error you should fill all fields in new rate",
+"Error_edit" => "Error you should fill all fields for editing rate",
+"error_name" => "Error rate name already exists",
+"File_error" => "Error to create rate with the file.cvs",
+"Error on line" => "Error on line",
+"Invalid_file_extension" => "<b>Invalid file extension.-</b> It must be csv",
+"create_new_rate" => "New Rate has been created",
+"edit_rate" => "Rate has been edited",
+"error_prefix" => "The prefix already exists with the same Trunk",
+"error" => "There was an error while writing in database. Try to enter data correctly",
+"CONFIRM_CONTINUE" => "Are you sure you want to delete this rate",
+"deleted" => "Rate has been deleted",
+"deleted_error" => "There was a problem while deleting rate in database",
+"Hidden_Digits" => "Hidden Digits",
+"APPLY_CHANGES" => "Apply Changes",
+"Validation Error" => "Validation Error",
+"error_CVS" => "There was an error while writing in database. Try to enter data correctly. Please review csv file",
+"by_min" => "(by min)",
+"alert_import" => "[!]File.csv[/!]&quot;Prefix&quot;,&quot;Name&quot;,&quot;Rate&quot;,&quot;Rate Offset&quot;,&quot;Hidden Digits&quot;,&quot;Trunk&quot;",
+"Date close" => "Date close",
+"Rate History" => "Rate History",
+"Keep history of the current rate" => "File current rate",
+"This option allow to create a new rate and keep the history of their rates, or if not only edit the current rate values." => "This option allows to modify the current rate while storing the values the rate has now (good for keeping the records reflecting the actual value the rate had at a particular time).",
+"errorUpdateParent" => "There was an error while writing in database. Please Try again.",
+"Status" => "Status",
+"Obsolete" => "Obsolete",
+"Current" => "Current",
+"File was imported successful" => "File was imported successful",
+"Error rate name already exists in database or is duplicated in csv file" => "Error rate name already exists in database or is duplicated in csv file",
+"The prefix already exists with the same Trunk in database or is duplicated in csv file" => "The prefix already exists with the same Trunk in database or is duplicated in csv file",
+);
+?>

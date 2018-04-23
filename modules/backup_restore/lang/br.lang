@@ -1,0 +1,148 @@
+<?php
+/* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+Codificación: UTF-8
++----------------------------------------------------------------------+
+| Issabel version 1.0                                                  |
+| http://www.issabel.org                                               |
++----------------------------------------------------------------------+
+| Copyright (c) 2006 Palosanto Solutions S. A.                         |
++----------------------------------------------------------------------+
+| Translate bye: Erwan DESVERGNES - SDCI                               |
+| erwan.desvergnes@SDCI.fr                                             |
+|                                                                      |                                               |
++----------------------------------------------------------------------+
+| The contents of this file are subject to the General Public License  |
+| (GPL) Version 2 (the "License"); you may not use this file except in |
+| compliance with the License. You may obtain a copy of the License at |
+| http://www.opensource.org/licenses/gpl-license.php                   |
+|                                                                      |
+| Software distributed under the License is distributed on an "AS IS"  |
+| basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+| the License for the specific language governing rights and           |
+| limitations under the License.                                       |
++----------------------------------------------------------------------+
+| The Initial Developer of the Original Code is PaloSanto Solutions    |
++----------------------------------------------------------------------+
+$Id: br.lang,v 1.0 2017/10/24 01:00:00 Ibinetwork Informática - rafael@ibinetwork.com.br */
+global $arrLangModule;
+$arrLangModule=array(
+"Are you sure you wish to delete backup (s)?" => "Are you sure you wish to delete backup (s)?",
+"Database" => "Banco de Dados",
+"PDF" => "PDF",
+"Endpoint" => "Endpoint",
+"Asterisk" => "Asterisk",
+"All options (Fax)" => "Todas opções (Fax)",
+"All options (Email)" => "Todas opções (Email)",
+"All options (Endpoint)" => "Todas opções (Endpoint)",
+"All options (Asterisk)" => "Todas opções (Asterisk)",
+"DAHDI Configuration" => "Configuração DAHDI",
+"Others" => "Outros",
+"All options (Others)" => "Todas opções (Outros)",
+"SugarCRM Database" => "Banco de dados SugarCRM",
+"VtigerCRM Database" => "Banco de dados VtigerCRM",
+"A2billing Database" => "Banco de dados A2billing",
+"Mysql Database" => "Banco de dados Mysql",
+"Menus and Permissions" => "Menus e Permissões",
+"This process could take several minutes" => "Este processo pode levar alguns minutos",
+"Mailbox" => "Caixas de email",
+"(Heavy Content)" => "(Conteúdo Pesado)",
+"Upload" => "Enviar",
+"File Upload" => "Enviar Arquivo",
+"The backup file would have a tar extension" => "The backup file would have a tar extension",
+"Error copying the file" => "Erro copiando o arquivo",
+"The file was copied correctly" => "O arquivo com copiado corretamente",
+"Backup" => "Novo Backup...",
+"Process" => "Executar",
+"Restore" => "Restaurar",
+"Issabel Database" => "Banco de Dados do Issabel",
+"Sounds" => "Sons",
+"Configuration Files" => "Arquivos de Configuração",
+"Monitors" => "Monitores",
+"tFTP" => "tFTP",
+"Email Acccounts" => "Contas de Email",
+"Choose an option to backup" => "Escolha uma opção para backup",
+"Could not generate backup file" => "Não foi possível gerar o arquivo de backup",
+"Backup Complete!" => "Backup Efetuado!",
+"Choose an option to restore" => "Escolha uma opção para restaurar",
+"Backup file path can't be empty" => "O caminho para o arquivo de backup não pode ser vazio",
+"File doesn't exist" => "O arquivo não existe",
+"Restore Complete!" => "Backup Restaurado!",
+"Backup File Location" => "Localização do Arquivo de Backup",
+"Select All options" => "Selecionar todas as opções",
+"Backup/Restore" => "Backup/Restaurar",
+"Backup List" => "Lista de Backup",
+"Name Backup" => "Nome do Backup",
+"Error when deleting backup file" => "Erro ao tentar apagar o arquivo de backup",
+"There are not backup file selected" => "Nenhum arquivo de backup foi selecionado",
+"Action" => "Tarefa",
+"Folder backup doesn't exist" => "O diretório de backup não existe",
+"Flash Operator Panel Config Files" => "Flash Operator Panel Config Files",
+"Date" => "Data",
+"Voicemails" => "Caixa de Mensagens de Voz",
+"Fax" => "Fax",
+"Email" => "Email",
+"Dahdi Configuration" => "Configuração Dahdi",
+"Cancel" => "Cancelar",
+"Select all in this section" => "Selecionar todos desta seção",
+"MOH" => "Musicas em Espera",
+"Others new" => "Outros",
+"Calendar  Database" => "Calendar  Database",
+"Address Book Database" => "Address Book Database",
+"Conference  Database" => "Conference  Database",
+"FTP Backup" => "FTP Backup",
+"FTP Backup" => "FTP Backup",
+"Server FTP" => "Servidor FTP",
+"Port" => "Porta",
+"User" => "Usuario
+"Password" => "Senha",
+"Local" => "Local",
+"Server FTP" => "Server FTP",
+"Upload" => "Enviar",
+"Download" => "Baixar",
+"Path Server FTP" => "Path Server FTP",
+"Error to connect" => "Please fill all fields to connect server",
+"Error Connection" => "Couldn't connect to server",
+"Error user_password" => "Couldn't connect with your user and password",
+"Error to save" => "Please fill all fields to save",
+"Error Drag Drop" => "Please Drag and Drop a file between lists",
+"Error to request" => "There was a problem with the connection",
+"Successfully uploaded" => "Successfully uploaded",
+"Problem uploading" => "There was a problem uploading",
+"Successfully written" => "Successfully written",
+"Problem downloading" => "There was a problem downloading",
+"TITLE" => "Please Drag and Drop a tar file between lists for uploading or downloading by FTP",
+"AUTOMATIC" => "Backup Automático",
+"DAILY" => "Diario",
+"MONTHLY" => "Mensal",
+"WEEKLY" => "Semanal",
+"DISABLED" => "Desativado",
+"SUCCESSFUL" => "Successful Process",
+"Unabled write file" => "Unabled write file",
+"Unabled open file" => "Unabled open file",
+"EOP" => "EOP",
+"programs" => "Programs",
+"Warning" => "<b><font size='2' color='red'>ATENÇÃO:</font></b> Versions to restore are different. You could have any problem with the behavior of the programs after restoring. Press process to accept or cancel if not.",
+"local_version" => "Atual",
+"external_version" => "Restaurar",
+"details" => "view details",
+"warning_details" => "Warning Details",
+"no_file_xml" => "<b><font size='2' color='red'>WARNING:</font></b> No Data versions in file Restore. You could have any problem with the behavior of the programs after restoring. Press process to accept or cancel if not.",
+"asterisk" => "Asterisk",
+"dahdi" => "DAHDI",
+"wanpipe-util" => "Wanpipe-Util",
+"issabelpbx" => "Issabelpbx",
+"issabel" => "Issabel",
+"Package" => "Pacote",
+"issabel-pbx" => "Issabel PBX",
+"issabel-email_admin" => "Issabel Email",
+"issabel-agenda" => "Issabel Agenda",
+"issabel-fax" => "Issabel Fax",
+"issabel-vtigercrm" => "Issabel VtigerCRM",
+"issabel-a2billing" => "Issabel A2billing",
+"issabel-sugarcrm-addon" => "Issabel SugarCRM",
+"Package not installed" => "Not installed",
+"Version" => "Versão",
+"Progress" => "Progresso",
+"Please verify if the mysql password is the correct in /etc/issabel.conf (mysqlrootpwd)" => "Please verify if the mysql password is the correct in /etc/issabel.conf (mysqlrootpwd)",
+);
+?>
