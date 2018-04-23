@@ -27,7 +27,9 @@ echo ""
 echo "Instalando audio em Português Brasil"
 echo""
 rsync --progress -r -u /usr/src/IssabelBR/audio/ /var/lib/asterisk/sounds/
+sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
+sed -i '/language=pt_BR/d' /etc/asterisk/iax2_general_custom.co
 echo "language=pt_BR" >> /etc/asterisk/iax2_general_custom.conf
 test=`asterisk -V | grep "13"`
 if [[ -z $test ]]; then
