@@ -9,7 +9,7 @@ Codificación: UTF-8
 +----------------------------------------------------------------------+
 | Translate bye: Erwan DESVERGNES - SDCI                               |
 | erwan.desvergnes@SDCI.fr                                             |
-|                                                                      |                                               |
+|                                                                      |
 +----------------------------------------------------------------------+
 | The contents of this file are subject to the General Public License  |
 | (GPL) Version 2 (the "License"); you may not use this file except in |
@@ -93,7 +93,7 @@ $arrLangModule=array(
 "FTP Backup" => "FTP Backup",
 "Server FTP" => "Servidor FTP",
 "Port" => "Porta",
-"User" => "Usuario
+"User" => "Usuario",
 "Password" => "Senha",
 "Local" => "Local",
 "Server FTP" => "Server FTP",
