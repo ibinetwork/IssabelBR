@@ -25,5 +25,9 @@ $arrLangModule = array(
     "Billing Capable" => "Capacidade de Faturamento",
     "Trunk Bill Configuration" => "Configuração Fatura do Tronco",
     "Trunk" => "Tronco",
+    "Default Rate Configuration" => "Configuração de Tarifa Padrão",
+    "Default Rate" => "Tarifa Padrão",
+    "Default Rate Offset" => "Default Rate Offset",
+    "Trunk Bill Configuration"=>"Trunk Bill Configuration",
 );
 ?>
