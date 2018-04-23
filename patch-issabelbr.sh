@@ -19,24 +19,22 @@ yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen subversi
 updatedb
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
+echo ""
 svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
 rsync --progress -r -u /usr/src/IssabelBR/web/ /var/www/html/
-rm -Rf /usr/src/IssabelBR
 amportal restart
 echo ""
 echo "Instalando audio em Português Brasil"
+echo""
 rsync --progress -r -u /usr/src/IssabelBR/audio/ /var/lib/asterisk/sounds/
 echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/iax2_general_custom.conf
-echo""
 test=`asterisk -V | grep "13"`
 if [[ -z $test ]]; then
  release="11"
 else
  release="13"
 fi
-# We want to WhiteList some user IP addresses so user doesn't get locked out
-# server IP address is?
 if [[ "$release" = "13" ]]; then
  cp /usr/src/IssabelBR/codecs/codec_g729-ast130-gcc4-glibc2.2-x86_64-pentium4.so /usr/lib64/asterisk/modules/codec_g729.so
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
@@ -46,6 +44,6 @@ else
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
  asterisk -rx "module load codec_g729"
 fi
+rm -Rf /usr/src/IssabelBR
 echo ""
 echo "Patch Brasileiro Instalado"
-
