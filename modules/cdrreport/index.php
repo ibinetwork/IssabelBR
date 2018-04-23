@@ -295,19 +295,19 @@ function _moduleContent(&$smarty, $module_name)
                 $arrTmp[6] = $value[4];
                     if ($value[5] == "ANSWERED") {
 		    $value[5] = "<font color=green>ATENDIDO</font>";
-			              }
-			              elseif ($value[5] == "NO ANSWER") {
+		    }
+		    elseif ($value[5] == "NO ANSWER") {
                     $value[5] = "<font color=red>NÃO ATENDIDO</font>";
-			              }
+		    }
                     elseif ($value[5] == "BUSY") {
                     $value[5] = "<font color=ambar>OCUPADO</font>";
                     }
                     elseif ($value[5] == "FAILED") {
                     $value[5] = "<font color=red>FALHOU</font>";
                     }
-			              else {
-				            $value[5] = "<font color=red>$value[5]</font>";
-			              }
+		    else {
+		    $value[5] = "<font color=red>$value[5]</font>";
+		    }
                 $arrTmp[7] = $value[5];
                 $iDuracion = $value[8];
                 $iSec = $iDuracion % 60; $iDuracion = (int)(($iDuracion - $iSec) / 60);
