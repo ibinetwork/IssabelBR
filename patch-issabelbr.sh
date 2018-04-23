@@ -29,7 +29,7 @@ echo""
 rsync --progress -r -u /usr/src/IssabelBR/audio/ /var/lib/asterisk/sounds/
 sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
-sed -i '/language=pt_BR/d' /etc/asterisk/iax2_general_custom.co
+sed -i '/language=pt_BR/d' /etc/asterisk/iax2_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/iax2_general_custom.conf
 test=`asterisk -V | grep "13"`
 if [[ -z $test ]]; then
@@ -48,4 +48,7 @@ else
 fi
 rm -Rf /usr/src/IssabelBR
 echo ""
-echo "Patch Brasileiro Instalado"
+echo ""
+echo "Patch Brasileiro Instalado."
+echo "Colabore você também https://github.com/ibinetwork/IssabelBR"
+echo "Obrigado!"
