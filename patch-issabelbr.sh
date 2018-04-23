@@ -18,3 +18,8 @@ echo "Instalando ferramentas úteis..."
 yum install mtr vim mlocate nmap tcpdump mc nano lynx rsync screen subversion -y
 updatedb
 echo ""
+echo "Instalando patch de idiomas, cdr e bilhetagem..."
+svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
+rsync --progress -r -u /usr/src/IssabelBR/web /var/www/html/
+rm -Rf /usr/src/IssabelBR
+amportal restart
