@@ -1,0 +1,305 @@
+<?php
+/* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+  Codificación: UTF-8
+  +----------------------------------------------------------------------+
+  | Issabel version 4.0                                                  |
+  | http://www.issabel.org                                               |
+  +----------------------------------------------------------------------+
+  | Copyright (c) 2006 Palosanto Solutions S. A.                         |
+  +----------------------------------------------------------------------+
+  | The contents of this file are subject to the General Public License  |
+  | (GPL) Version 2 (the "License"); you may not use this file except in |
+  | compliance with the License. You may obtain a copy of the License at |
+  | http://www.opensource.org/licenses/gpl-license.php                   |
+  |                                                                      |
+  | Software distributed under the License is distributed on an "AS IS"  |
+  | basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+  | the License for the specific language governing rights and           |
+  | limitations under the License.                                       |
+  +----------------------------------------------------------------------+
+  | The Initial Developer of the Original Code is PaloSanto Solutions    |
+  +----------------------------------------------------------------------+
+  $Id: br.lang,v 1.0 2017/09/05 23:00:00 Ibinetwork Informatica rafael@ibinetwork.com.br $ */
+global $arrLang;
+$arrLang=array(
+/*System Info: Libreria jpgrapha*/
+"Disk usage"=>"Uso do disco",
+"Used space"=>"Espaço usado",
+"Free space"=>"Espaço livre",
+"Simultaneous calls, memory and CPU"=>"Ligações simultâneas, memória e CPU",
+"Sim. calls"=>"Ligações simultâneas",
+"CPU usage (%)"=>"Uso de CPU (%)",
+"Mem. usage (MB)"=>"Uso de memória (MB)",
+/*end System Info: Libreria jpgraphap*/
+
+"Start"=>"Primeiro",
+"End"=>"Último",
+"Next"=>"Próximo",
+"Previous"=>"Anterior",
+"Export"=>"Exportar",
+
+"Group" => "Grupo",
+"administrator" => "Administrador",
+"operator" => "Operator",
+"extension" => "Ramal",
+
+
+"Group List" => "Group List",
+"User List" => "User List",
+"Logout" => "Sair",
+"Change" => "Alterar",
+"Title" => "Título",
+"Language"=>"Idioma",
+"Load Module" => "Carregar módulo",
+
+
+"Required field" => "Campo obrigatório",
+"Cancel" => "Cancelar",
+"Apply changes" => "Aplicar alterações",
+"Save" => "Salvar",
+"Edit" => "Editar",
+"Delete" => "Apagar",
+"Are you sure you wish to continue?" => "Are you sure you wish to continue?",
+"The following fields contain errors" => "The following fields contain errors",
+"Validation Error" => "Erro de Validação",
+
+
+
+/*Login to Issabel*/
+"Welcome to Issabel"=>"Bem-vindo ao Issabel",
+"Please enter your username and password"=>"Por favor entre com usuário e senha",
+"Username"=>"Usuário",
+"Password"=>"Senha",
+"Submit"=>"Enviar",
+"Login page"=>"Pagina de Login",
+/*end Login to Issabel*/
+
+/*start menu*/
+"System"=>"Sistema",
+"System Info"=>"Informação do Sistema",
+"User Management"=>"Gerenciar Usuário",
+"Users"=>"Usuários",
+"Menu Administrator"=>"Menu Administrator",
+"Group Permission" => "Group Permissions",
+/*end menu*/
+
+
+/*version 0.7*/
+/*start paloSantoValidar.class.php*/
+"Options"=>"Opções",
+"Empty field"=>"Campo vazio",
+"Bad Format"=>"Formato Errado",
+"No option was selected"=>"Nenhuma opção selecionada",
+"Octets out of range" => "Octetos fora do range",
+"Undefined validation type" => "Tipo de validação indefinida",
+/*end paloSantoValidar.class.php*/
+
+/*version 0.8*/
+/*start user*/
+"View User"=>"Visualizar Usuario",
+/*end user*/
+
+/*system - date/time*/
+"Date/Time" => "Data/Hora",
+/*end system - date/time*/
+
+/*load module*/
+"Choose Menu" => "Choose Menu",
+"ID for new menu" => "ID for new menu",
+"Menu Name" => "Menu Name",
+"Defined Menu" => "Defined Menu",
+"New Menu" => "New Menu",
+"Module sucessfully loaded" => "Module successfully loaded",
+"Folder name doesn't exist in module file" => "Folder name doesn't exist in module file",
+"Folder configs doesn't exist in module file" => "Folder configs doesn't exist in module file",
+"Folder themes doesn't exist in module file" => "Folder themes doesn't exist in module file",
+"File index.php doesn't exist in module file" => "File index.php doesn't exist in module file",
+"File install.php doesn't exist in module file" => "File install.php doesn't exist in module file",
+/*end load module*/
+
+// Issabel 0.9
+/*Start SubModule Themes*/
+"Themes" => "Temas",
+"Change Theme" => "Alterar Tema",
+/*end SubModule Themes*/
+
+/*Module IM*/
+"IM" => "IM",
+"OpenFire" => "OpenFire",
+"The service Openfire No running" => "The Openfire service is not active at this moment. If you want to activate it please ",
+"Webmin" => "Webmin",
+"The service Webmin No running" => "The Webmin service is not active at this moment. If you want to activate it please ",
+
+
+/*vTigerCRM*/
+"vTigerCRM" => "vTigerCRM",
+"The vTiger installation is almost done. To complete it please" => "The vTiger installation is almost done. To complete it please ",
+"click here" => "clique aqui",
+
+/*Sugarcrm*/
+"SugarCRM" => "SugarCRM",
+"The SugarCRM installation is almost done. To complete it please" => "The SugarCRM installation is almost done. To complete it please",
+
+/* Preferences*/
+"Preferences" => "Preferências",
+
+/* Start About Issabel */
+"About Issabel"=>"Sobre Issabel",
+"About Issabel2"=>"Sobre",
+"HELP"=>"Ajuda",
+"About Issabel Content"=>"Issabel is a reliable and easy-to-use Unified Communications Solution. This web-based open source software has become the solution of choice for implementations of communications over IP around the globe.",
+"About Issabel Closed"=>"Fechar",
+/* End About Issabel */
+
+"Search" => "Buscar",
+"Show"   => "Exibir",
+'View' => 'Ver',
+'Status' => 'Status',
+'Type' => 'Tipo',
+'Active' => 'Ativo',
+'Filter' => 'Filtro',
+'md_message_title' => 'Dispensar',
+"ERROR" => "Erro",
+"VersionDetails" => "Versão",
+"VersionPackage" => "Details of package versions",
+"textMode" => "Modo Texto",
+"htmlMode" => "Modo Html",
+"Register" => "Registrar",
+"Registered" => "Registrado",
+"Unauthorized" => "Unauthorized",
+"You are not authorized to access to this page" => "You are not authorized to access to this page",
+"You need administrator privileges" => "You need administrator privileges",
+"Issabel Authentication" => "Autenticação Issabel",
+
+/*new*/
+"Please write your current password." => "Please write your current password.",
+"Please write the new password and confirm the new password." => "Please write the new password and confirm the new password.",
+"The new password doesn't match with retype new password." => "The new password doesn't match with retype new password.",
+"Please your session id does not exist. Refresh the browser and try again." => "Please your session id does not exist. Refresh the browser and try again.",
+"Issabel password has been changed." => "Issabel password has been changed.",
+"Impossible to change your Issabel password." => "Impossible to change your Issabel password.",
+"Impossible to change your Issabel password. User does not exist or password is wrong" => "Impossible to change your Issabel password. User does not exist or password is wrong",
+"Change Issabel Password" => "Alterar Senha do Issabel",
+"Current Password" => "Senha Atual",
+"New Password" => "Nova Senha",
+"Retype New Password" => "Confirma Senha",
+"Change" => "Alterar",
+"Search modules" => "Buscar módulos",
+"Unauthorized" => "Unauthorized",
+"You are not authorized to access this page." => "You are not authorized to access this page.",
+"You have not permissions to access to Flash Operator Panel. Please contact your administrator." => "You don't have permissions to access to Flash Operator Panel. Please contact your administrator.",
+"Advice" => "Aviso",
+"Bookmarks" => "Favoritos",
+"History" => "Histórico",
+"The maximum of bookmarks is 5. Please uncheck one in order to add this bookmark" => "The maximum of bookmarks is 5. Please uncheck one in order to add this bookmark",
+"Bookmark has been added." => "Bookmark has been added.",
+"Bookmark cannot be added. Please try again or contact with your elastix administrator and notify the next error: " => "Bookmark cannot be added. Please try again or contact with your Issabel administrator and notify the next error: ",
+"Bookmark has been removed." => "Bookmark has been removed.",
+"Bookmark cannot be removed. Please try again or contact with your elastix administrator and notify the next error: " => "Bookmark cannot be removed. Please try again or contact with your Issabel administrator and notify the next error: ",
+"Sending Request" => "Sending Request",
+"Request cannot be completed. Please try again or contact with your elastix administrator and notify the next error: " => "Request cannot be completed. Please try again or contact with your Issabel administrator and notify the next error: ",
+"Request has been sent." => "Request has been sent.",
+"Add Bookmark" => "Add Bookmark",
+"Remove Bookmark" => "Remove Bookmark",
+"Adding Bookmark" => "Adding Bookmark",
+"Removing Bookmark" => "Removing Bookmark",
+"Hiding left panel" => "Hiding left panel",
+"Loading left panel" => "Loading left panel",
+"Hide left panel" => "Hide left panel",
+"Load left panel" => "Load left panel",
+"characters left" => "characters left",
+"Save Note" => "Save Note",
+"Saving Note" => "Saving Note",
+"Loading Note" => "Loading Note",
+"Click here to leave a note." => "Click here to leave a note.",
+"Your session has expired. Press 'Accept' to return to the login page." => "Your session has expired. Press 'Accept' to return to the login page.",
+"No records match the filter criteria" => "Nenhum registro corresponde ao critério do filtro",
+"New Row" => "Nova Coluna",
+"Custom Action" => "Ação Personlizada",
+"Delete Selected" => "Apagar Selecionado",
+"Page" => "Página",
+"of" => "de",
+"records" => "gravações",
+"Apply Filter" => "Aplicar Filtro",
+"Download" => "Download",
+"WARNING" => "ATENÇÃO",
+"Show Filter" => "Exibir Filtro",
+"Hide Filter" => "Ocultar Filtro",
+"More Options" => "Mais Opções",
+"Filter applied: " => "Filtro aplicado: ",
+"Filter applied " => "Filtro aplicado: ",
+"Voicemail" => "Caixa-postais",
+"Calls Recordings" => "Gravações de Ligações",
+"Panels" => "Painéis",
+"Currency" => "Moeda",
+"Reports" => "Relatórios",
+"CDR Report" => "Relatório de Ligações",
+"Dashboard" => "Painel",
+"Dashboard Applet Admin" => "Gerenciar Applet",
+"Shutdown" => "Desligar",
+"Channels Usage" => "Uso de Canais",
+"Asterisk Logs" => "Logs do Asterisk",
+"Graphic Report" => "Relatório Gráfico",
+"Summary" => "Resumo",
+"Missed Calls" => "Ligações Perdidas",
+"Network" => "Rede",
+"My Extension" => "Meu Ramal",
+"Settings" => "Configurações",
+"Updates" => "Atualizações",
+"Backup/Restore" => "Backup/Restauração",
+"Hardware Detector" => "Detector de Placa",
+"DHCP Server" => "Servidor DHCP",
+"DHCP Client List" => "Lista de Clientes DHCP",
+"Assign IP Address to Host" => "Atribuir Endereço IP para Host",
+"Group Permissions" => "Permissão de Grupo",
+"Repositories" => "Repositórios",
+"Packages" => "Pacotes",
+"Calendar" => "Calendário",
+"Address Book" => "Contatos",
+"Domains" => "Domínios",
+"Accounts" => "Contas",
+"Relay" => "Relay",
+"Antispam" => "Antispam",
+"Remote SMTP" => "SMTP Remoto",
+"Email list" => "Lista de Email",
+"Email stats" => "Estatísticas de Email",
+"Vacations" => "Férias",
+"Virtual Fax" => "FAX Virtual",
+"Fax Master" => "FAX Principal",
+"Fax Clients" => "Clientes de FAX",
+"Fax Viewer" => "Visualizador de FAX",
+"Email Template" => "Modelo de Email",
+"PBX Configuration" => "Configurações do PBX",
+"Operator Panel" => "Painel do Operador",
+"Batch Configurations" => "Configurações em Lote",
+"Batch of Extensions" => "Ramais em Lote",
+"Conference" => "Conferência",
+"Tools" => "Ferramentas",
+"Asterisk-Cli" => "Asterisk CLI",
+"Asterisk File Editor" => "Editor de Arquivos do Asterisk",
+"Text to Wav" => "Texto para Wav",
+"Festival" => "Festival",
+"Recordings" => "Gravações",
+"FOP2" => "FOP2",
+"FOP2 Manager" => "Gerenciador FOP2",
+"Endpoint Configurator" => "Configurador de Endpoints",
+"Addons" => "Adicionais",
+"Security" => "Segurança",
+"Admin" => "Administrar",
+"Banned IPs" => "IPs Banidos",
+"Audit" => "Auditoria",
+"Weak Keys" => "Senhas Fracas",
+"Advanced Settings" => "Configurações Avançadas",
+"HTTPS Certificate (Let's Encrypt)" => "Certificado HTTPS (Let's Encrypt)",
+"Firewall Rules" => "Regras do Firewall",
+"Define Ports" => "Definir Portas",
+"Port Knocking Interfaces" => "Port Knocking Interfaces",
+"Port Knocking Users" => "Port Knocking Users",
+"Network Parameters" => "Configurações de Rede",
+"Your username does not have any extension assigned." => "Your username does not have any extension assigned.",
+"contact_admin" => "Não há nenhum ramal associado ao usuário atual. Entre em contato com o administrador para atribuir um ramal",
+"no_extension" => "Não há nenhum ramal associado ao usuário atual. Você pode associar um ramal ao seu usuário clicando <a href=\"javascript: openWindow('index.php?menu=userlist&amp;action=edit_userExtension&amp;rawmode=yes');\"> aqui </a>",
+"Only administrators can delete CDRs" => "Somente administradores podem apagar relatórios de ligações",
+);
+?>
+
