@@ -1,5 +1,4 @@
 #!/bin/bash
-
 clear
 echo " _____               _          _    _    ____  _____  "
 echo '|_   _|             | |        | |/\| |/\|  _ \|  __ \ '
@@ -13,4 +12,9 @@ echo "Grupo Telegram http://t.me/issabelbr"
 echo ""
 echo "Atualizando o sistema..."
 echo ""
-yum update -y                                                    
+yum update -y
+echo ""
+echo "Instalando ferramentas úteis..."
+yum install mtr vim mlocate nmap tcpdump mc nano lynx -y
+updatedb
+echo ""
