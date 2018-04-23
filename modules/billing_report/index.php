@@ -286,7 +286,7 @@ function reportbilling_report($smarty, $module_name, $local_templates_dir, &$pDB
 	    }
         $arrColumns  = array(_tr("Date"), _tr("Rate Applied"), _tr("Rate Value"), _tr("Source"), _tr("Destination"), _tr("Dst. Channel"),_tr("Account Code"),_tr("Duration"),_tr("Cost"),_tr("Summary Cost"));
     }else{
-        $limit  = 20;
+        $limit  = 5000;
         $oGrid->setLimit($limit);
         $oGrid->setTotal($totalbilling_report);
         $offset = $oGrid->calculateOffset();
@@ -338,7 +338,7 @@ function reportbilling_report($smarty, $module_name, $local_templates_dir, &$pDB
                     }
                 }
 
-                $arrTmp[2] = $rate_value;
+                $arrTmp[2] = number_format($rate_value,2,",",".");
                 $arrTmp[3] = $value['Src'];
                 $arrTmp[4] = $destination;
                 $arrTmp[5] = $value['Dst_channel'];
@@ -354,10 +354,16 @@ function reportbilling_report($smarty, $module_name, $local_templates_dir, &$pDB
                 }
                 $arrTmp[7] = $sTiempo;
 
-                $charge=(($value['duration']/60)*$rate_value)+$rate_offset;
-                $arrTmp[8] = number_format($charge,3);
-                $sum_cost  = $sum_cost + $arrTmp[8];
-                $arrTmp[9] = $sum_cost;
+                if ($value['duration'] > 0 && $value['duration'] <= 30) {
+			$charge = (($rate_value/2)+$rate_offset);
+		}
+		else { 
+			$charge = (ceil($value['duration'] /6) * ($rate_value /10))+$rate_offset;
+		}
+/* $charge=(($value['duration']/60)*$rate_value)+$rate_offset; */
+                $arrTmp[8] = number_format($charge,2,",",".");
+                $sum_cost  = $sum_cost + $charge;/*$arrTmp[8]; */
+                $arrTmp[9] = number_format($sum_cost,2,",",".");
                 $arrData[] = $arrTmp;
             }
         }
