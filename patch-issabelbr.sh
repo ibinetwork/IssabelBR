@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.0.1"
+versao="1.0.2"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -50,6 +50,20 @@ else
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
  asterisk -rx "module load codec_g729"
 fi
+echo ""
+eho ""Recompilando DAHDI"
+echo ""
+cd /usr/src/dahdi-linux-2.11.1/
+make
+make install
+dahdi_tools
+echo ""
+echo "Instalando tratamento Hangup Cause"
+echo ""
+sed -i '/#extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
+echo "#extensions_tratamento_hangupcause.conf >> /etc/asterisk/extensions_override_issabel.conf
+rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
+echo ""
 rm -Rf /usr/src/IssabelBR
 clear
 echo " _____               _          _    _    ____  _____  "
@@ -66,4 +80,5 @@ echo "Participe do grupo Telegram http://t.me/issabelbr"
 echo "Colabore você também https://github.com/ibinetwork/IssabelBR"
 echo "Obrigado!"
 echo ""
+echo "** RECOMENDADO REINICIAR O SERVIDOR PARA EXECUTAR NOVO KERNEL E NOVO DAHDI **"
 echo ""
