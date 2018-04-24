@@ -49,9 +49,18 @@ else
 fi
 rm -Rf /usr/src/IssabelBR
 clear
+echo " _____               _          _    _    ____  _____  "
+echo '|_   _|             | |$versao | |/\| |/\|  _ \|  __ \ '
+echo '  | |  ___ ___  __ _| |__   ___| |\ ` ´ /| |_) | |__) |'
+echo "  | | / __/ __|/ _\` | '_ \ / _ \ |_     _|  _ <|  _  /"
+echo ' _| |_\__ \__ \ (_| | |_) |  __/ |/ , . \| |_) | | \ \ '
+echo '|_____|___/___/\__,_|_.__/ \___|_|\/|_|\/|____/|_|  \_\'
+echo "======================================================="
 echo ""
 echo ""
 echo "Patch Brasileiro Instalado."
 echo "Participe do grupo Telegram http://t.me/issabelbr"
 echo "Colabore você também https://github.com/ibinetwork/IssabelBR"
 echo "Obrigado!"
+echo ""
+echo ""
