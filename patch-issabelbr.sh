@@ -32,6 +32,9 @@ sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
 sed -i '/language=pt_BR/d' /etc/asterisk/iax_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/iax_general_custom.conf
+echo ""
+echo "Instalando codec g729"
+echo ""
 test=`asterisk -V | grep "13"`
 if [[ -z $test ]]; then
  release="11"
