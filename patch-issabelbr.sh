@@ -51,7 +51,7 @@ else
  asterisk -rx "module load codec_g729"
 fi
 echo ""
-eho ""Recompilando DAHDI"
+echo "Recompilando DAHDI"
 echo ""
 cd /usr/src/dahdi-linux-2.11.1/
 make
@@ -61,7 +61,7 @@ echo ""
 echo "Instalando tratamento Hangup Cause"
 echo ""
 sed -i '/#extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
-echo "#extensions_tratamento_hangupcause.conf >> /etc/asterisk/extensions_override_issabel.conf
+echo "#extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabel.conf
 rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
 echo ""
 rm -Rf /usr/src/IssabelBR
