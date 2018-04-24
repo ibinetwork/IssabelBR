@@ -1,5 +1,5 @@
-ChangeLog 1.0.0
-23/04/2018
+ChangeLog 
+1.0.0 - 23/04/2018
 * Correção da Tradução da Pagina Backup/Restauração
 * Correção da Tradução da Pagina Gravações (download funcionando)
 * Correção da Tradução da Pagina Uso de Canais
@@ -7,3 +7,6 @@ ChangeLog 1.0.0
 * Patch na Pagina Billing Report para Calcular cadencia brasileira 30/6
 * Instalação do Audio em Português Brasileiro
 * Instalação do Codec g729 Free
+
+1.0.1 - 24/04/2018
+* Correção do patch para Audio em Português no Protocolo IAX
