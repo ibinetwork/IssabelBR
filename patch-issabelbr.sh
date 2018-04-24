@@ -63,6 +63,7 @@ echo ""
 sed -i '/#extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
 echo "#extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabel.conf
 rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
+chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 echo ""
 rm -Rf /usr/src/IssabelBR
 clear
