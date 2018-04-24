@@ -30,8 +30,8 @@ echo""
 rsync --progress -r -u /usr/src/IssabelBR/audio/ /var/lib/asterisk/sounds/
 sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
-sed -i '/language=pt_BR/d' /etc/asterisk/iax2_general_custom.conf
-echo "language=pt_BR" >> /etc/asterisk/iax2_general_custom.conf
+sed -i '/language=pt_BR/d' /etc/asterisk/iax_general_custom.conf
+echo "language=pt_BR" >> /etc/asterisk/iax_general_custom.conf
 test=`asterisk -V | grep "13"`
 if [[ -z $test ]]; then
  release="11"
@@ -48,8 +48,10 @@ else
  asterisk -rx "module load codec_g729"
 fi
 rm -Rf /usr/src/IssabelBR
+clear
 echo ""
 echo ""
 echo "Patch Brasileiro Instalado."
+echo "Participe do grupo Telegram http://t.me/issabelbr"
 echo "Colabore você também https://github.com/ibinetwork/IssabelBR"
 echo "Obrigado!"
