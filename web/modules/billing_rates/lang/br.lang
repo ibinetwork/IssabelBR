@@ -45,5 +45,7 @@ $arrLangModule = array(
     "Date close" => "Data de fechamento",
     "Status" => "Estado",
     "Current" => "Atual",
+    "Cancel" => "Cancelar",
+    "Apply Changes" => "Aplicar Alterações",
 );
 ?>
