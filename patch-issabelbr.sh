@@ -23,7 +23,6 @@ echo "Instalando patch de idiomas, cdr e bilhetagem..."
 echo ""
 svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
 cp /var/www/html/modules/billing_report/index.php /var/www/html/modules/billing_report/index.php.bkp
-cp /var/www/html/modules/cdrreport/index.php
 cp /var/www/html/modules/cdrreport/index.php /var/www/html/modules/cdrreport/index.php.bkp
 rsync --progress -r -u /usr/src/IssabelBR/web/ /var/www/html/
 amportal restart
