@@ -37,5 +37,13 @@ $arrLangModule = array(
     "New_rate" => "Nova Tarifa",
     "File current rate" => "Arquivar tarifa atual",
     "This option allow to create a new rate and keep the history of their rates, or if not only edit the current rate values." => "Esta opção permite modificar a tarifa atual enquanto mantém o histórico das tarifas anteriores.",
+    "(by min)" => "(por min)",
+    "Hidden Digits" => "Digitos Ocultos",
+    "Rate offset" => "Tarifa de conexão",
+    "Rate History" => "Histórico de Tarifas",
+    "Creation Date" => "Data de Criação",
+    "Date close" => "Data de fechamento",
+    "Status" => "Estado",
+    "Current" => "Atual",
 );
 ?>
