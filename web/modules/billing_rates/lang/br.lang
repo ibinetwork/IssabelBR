@@ -35,6 +35,7 @@ $arrLangModule = array(
     "Are you sure you wish to continue?" => "Deseja continuar?",
     "create_rate" => "Criar Nova Tarifa",
     "New_rate" => "Nova Tarifa",
+    "File current rate" => "Arquivar tarifa atual",
     "This option allow to create a new rate and keep the history of their rates, or if not only edit the current rate values." => "Esta opção permite modificar a tarifa atual enquanto mantém o histórico das tarifas anteriores.",
 );
 ?>
