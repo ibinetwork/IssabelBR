@@ -15,3 +15,6 @@ ChangeLog
 1.0.2 - 24/04/2018
 * Recompilação do DAHDI para resolver a atualização do Kernel e DAHDI
 * Adicionado patch para tratar Hangup Cause - SIP para Ocupado e Numero Inexistente
+
+1.0.3 - 25/04/2018
+* Backup do arquivo original do Relatório de Ligações e do Relatório de Faturamento
