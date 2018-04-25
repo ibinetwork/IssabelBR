@@ -1,8 +1,8 @@
 #!/bin/bash
-versao="1.0.0"
+versao="1.0.2"
 clear
 echo " _____               _          _    _    ____  _____  "
-echo '|_   _|             | |$versao | |/\| |/\|  _ \|  __ \ '
+echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
 echo '  | |  ___ ___  __ _| |__   ___| |\ ` ´ /| |_) | |__) |'
 echo "  | | / __/ __|/ _\` | '_ \ / _ \ |_     _|  _ <|  _  /"
 echo ' _| |_\__ \__ \ (_| | |_) |  __/ |/ , . \| |_) | | \ \ '
@@ -26,12 +26,15 @@ rsync --progress -r -u /usr/src/IssabelBR/web/ /var/www/html/
 amportal restart
 echo ""
 echo "Instalando audio em Português Brasil"
-echo""
+echo ""
 rsync --progress -r -u /usr/src/IssabelBR/audio/ /var/lib/asterisk/sounds/
 sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
-sed -i '/language=pt_BR/d' /etc/asterisk/iax2_general_custom.conf
-echo "language=pt_BR" >> /etc/asterisk/iax2_general_custom.conf
+sed -i '/language=pt_BR/d' /etc/asterisk/iax_general_custom.conf
+echo "language=pt_BR" >> /etc/asterisk/iax_general_custom.conf
+echo ""
+echo "Instalando codec g729"
+echo ""
 test=`asterisk -V | grep "13"`
 if [[ -z $test ]]; then
  release="11"
@@ -47,9 +50,36 @@ else
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
  asterisk -rx "module load codec_g729"
 fi
+echo ""
+echo "Recompilando DAHDI"
+echo ""
+cd /usr/src/dahdi-linux-2.11.1/
+make
+make install
+dahdi_tools
+echo ""
+echo "Instalando tratamento Hangup Cause"
+echo ""
+sed -i '/#extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
+echo "#extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabel.conf
+rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
+chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
+echo ""
 rm -Rf /usr/src/IssabelBR
+clear
+echo " _____               _          _    _    ____  _____  "
+echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
+echo '  | |  ___ ___  __ _| |__   ___| |\ ` ´ /| |_) | |__) |'
+echo "  | | / __/ __|/ _\` | '_ \ / _ \ |_     _|  _ <|  _  /"
+echo ' _| |_\__ \__ \ (_| | |_) |  __/ |/ , . \| |_) | | \ \ '
+echo '|_____|___/___/\__,_|_.__/ \___|_|\/|_|\/|____/|_|  \_\'
+echo "======================================================="
 echo ""
 echo ""
 echo "Patch Brasileiro Instalado."
+echo "Participe do grupo Telegram http://t.me/issabelbr"
 echo "Colabore você também https://github.com/ibinetwork/IssabelBR"
 echo "Obrigado!"
+echo ""
+echo "** RECOMENDADO REINICIAR O SERVIDOR PARA EXECUTAR NOVO KERNEL E NOVO DAHDI **"
+echo ""
