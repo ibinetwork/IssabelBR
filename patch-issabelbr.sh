@@ -13,10 +13,10 @@ echo "Grupo Telegram http://t.me/issabelbr"
 echo ""
 echo "Atualizando o sistema..."
 echo ""
-yum update -y
+yum -y update && yum -y upgrade
 echo ""
 echo "Instalando ferramentas úteis..."
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen subversion -y
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion -y
 updatedb
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
