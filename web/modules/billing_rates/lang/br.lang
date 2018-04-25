@@ -47,5 +47,6 @@ $arrLangModule = array(
     "Current" => "Atual",
     "Cancel" => "Cancelar",
     "Apply Changes" => "Aplicar Alterações",
+    "Required field" => "Obrigatório",
 );
 ?>
