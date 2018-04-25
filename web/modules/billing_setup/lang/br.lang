@@ -27,7 +27,7 @@ $arrLangModule = array(
     "Trunk" => "Tronco",
     "Default Rate Configuration" => "Configuração de Tarifa Padrão",
     "Default Rate" => "Tarifa Padrão",
-    "Default Rate Offset" => "Default Rate Offset",
-    "Trunk Bill Configuration"=>"Trunk Bill Configuration",
+    "Default Rate Offset" => "Tarifa de Conexão Padrão",
+    "Trunk Bill Configuration"=>"Configuração da Conta de Tronco",
 );
 ?>
