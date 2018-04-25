@@ -23,18 +23,18 @@
 global $arrLangModule;
 $arrLangModule = array(
     "Prefix" => "Prefixo",
-    "Rate" => "Taxa",
-    "Rate Offset" => "Taxa Offset",
-    "New Rate" => "Nova Taxa",
-    "Edit Rate" => "Editar Taxa",
-    "View Rate" => "Ver Taxa",
+    "Rate" => "Tarifa",
+    "Rate Offset" => "Tarifa de Conexão",
+    "New Rate" => "Nova Tarifa",
+    "Edit Rate" => "Editar Tarifa",
+    "View Rate" => "Ver Tarifa",
     "View" => "Ver",
-    "Rates List" => "Lista de Taxas",
+    "Rates List" => "Lista de Tarifas",
     "Trunk" => "Tronco",
     "Name" => "Nome",
     "Are you sure you wish to continue?" => "Deseja continuar?",
-    "create_rate" => "Criar Nova Taxa",
-    "New_rate" => "Nova Taxa",
-    "This option allow to create a new rate and keep the history of their rates, or if not only edit the current rate values." => "This option allows to modify the current rate while keeping the history of the different values this rate has adopted through time (good for keeping the records reflecting the actual value the rate had at a particular time).",
+    "create_rate" => "Criar Nova Tarifa",
+    "New_rate" => "Nova Tarifa",
+    "This option allow to create a new rate and keep the history of their rates, or if not only edit the current rate values." => "Esta opção permite modificar a tarifa atual enquanto mantém o histórico das tarifas anteriores.",
 );
 ?>
