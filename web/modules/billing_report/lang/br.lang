@@ -28,7 +28,7 @@ $arrLangModule = array(
     "Channel" => "Canal",
     "Billing Report" => "Relatório de Faturamento",
     "Duration in seconds" => "Duração em Segundos",
-    "Cost" => "Custo",
+    "Cost" => "Custo por Ligação",
     "Rate Applied" => "Taxa Aplicada",
     "Date" => "Data",
     "Source" => "Origem",
@@ -37,5 +37,8 @@ $arrLangModule = array(
     "Duration" => "Duração",
     "Filter" => "Filtro",
     "Field" => "Campo",
+    "Rate Value" => "Tarifa",
+    "Account Code" => "Protocolo",
+    "Summary Cost" => "Soma dos Custos",
 );
 ?>
