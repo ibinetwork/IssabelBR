@@ -17,7 +17,7 @@ yum -y update && yum -y upgrade
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion -y
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm -y
 updatedb
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
