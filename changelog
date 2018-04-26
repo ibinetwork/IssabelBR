@@ -21,3 +21,6 @@ ChangeLog
 
 1.0.4 - 25/04/2018
 * Tradução do Faturamento
+
+1.0.5 - 26/04/2018
+* Correção do Features Dialplan para Asterisk 13
