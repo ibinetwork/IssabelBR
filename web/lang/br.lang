@@ -305,5 +305,7 @@ $arrLang=array(
 "Billing Report" => "Relatório de Faturamento",
 "Destination Distribution" => "Distribuição por Destino",
 "Billing Setup" => "Configuração de Faturamento",
+"Edit" => "Editar",
+"Import File" => "Importar Arquivo",
 );
 ?>
