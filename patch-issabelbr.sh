@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.0.4"
+versao="1.0.5"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -16,6 +16,7 @@ echo ""
 yum -y update && yum -y upgrade
 echo ""
 echo "Instalando ferramentas úteis..."
+echo ""
 yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion -y
 updatedb
 echo ""
@@ -47,6 +48,11 @@ if [[ "$release" = "13" ]]; then
  cp /usr/src/IssabelBR/codecs/codec_g729-ast130-gcc4-glibc2.2-x86_64-pentium4.so /usr/lib64/asterisk/modules/codec_g729.so
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
  asterisk -rx "module load codec_g729"
+ echo ""
+ echo "Ajustando arquivo features.conf para Asterisk 13"
+ echo ""
+ sed -i '/parkedplay=both/d' /etc/asterisk/features_general_additional.conf
+ echo ""
 else
  cp /usr/src/IssabelBR/codecs/codec_g729-ast110-gcc4-glibc-x86_64-pentium4.so /usr/lib64/asterisk/modules/codec_g729.so
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
