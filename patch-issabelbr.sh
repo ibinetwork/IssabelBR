@@ -72,7 +72,8 @@ echo "Instalando tratamento Hangup Cause"
 echo ""
 sed -i '/#extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
 sed -i '/#include /etc/asterisk/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
-echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabel.conf
+sed -i '/#include /etc/asterisk/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabelpbx.conf
+echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabelpbx.conf
 rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 echo ""
