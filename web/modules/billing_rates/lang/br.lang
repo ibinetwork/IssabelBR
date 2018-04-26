@@ -50,5 +50,6 @@ $arrLangModule = array(
     "Required field" => "Obrigatório",
     "Save" => "Salvar",
     "Import File" => "Importar Arquivo",
+    "Edit" => "Editar",
 );
 ?>
