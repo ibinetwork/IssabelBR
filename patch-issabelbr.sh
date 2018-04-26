@@ -51,6 +51,8 @@ if [[ "$release" = "13" ]]; then
  echo ""
  echo "Ajustando arquivo features.conf para Asterisk 13"
  echo ""
+ cp /var/www/html/admin/modules/parking/functions.inc/dialplan.php /var/www/html/admin/modules/parking/functions.inc/dialplan.php.bkp
+ sed -i '63d' /var/www/html/admin/modules/parking/functions.inc/dialplan.php
  sed -i '/parkedplay=both/d' /etc/asterisk/features_general_additional.conf
  echo ""
 else
@@ -74,6 +76,7 @@ rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 echo ""
 rm -Rf /usr/src/IssabelBR
+amportal restart
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
