@@ -51,5 +51,13 @@ $arrLangModule = array(
     "Save" => "Salvar",
     "Import File" => "Importar Arquivo",
     "Edit" => "Editar",
+    "import_rate" => "Importar Tarifa",
+    "by_min" => "(por min)",
+    "None" => "Nada",
+    "SAVE" => "Salvar",
+    "CANCEL" => "Cancelar",
+    "EDIT" => "Editar",
+    "DELETE" => "Apagar",
+    "Rate_offset" => "Tarifa de Conexão",
 );
 ?>
