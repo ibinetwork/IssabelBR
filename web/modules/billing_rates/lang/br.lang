@@ -61,6 +61,6 @@ $arrLangModule = array(
     "Rate_offset" => "Tarifa de Conexão",
     "Hidden_Digits" => "Digitos Ocultos",
     "APPLY_CHANGES" => "Aplicar Alterações",
-    "Keep history of the current rate" => "Manter histórico da tarifa atual",
+    "Keep history of the current rate" => "Manter histórico da tarifa atual ",
 );
 ?>
