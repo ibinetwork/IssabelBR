@@ -300,5 +300,10 @@ $arrLang=array(
 "contact_admin" => "Não há nenhum ramal associado ao usuário atual. Entre em contato com o administrador para atribuir um ramal",
 "no_extension" => "Não há nenhum ramal associado ao usuário atual. Você pode associar um ramal ao seu usuário clicando <a href=\"javascript: openWindow('index.php?menu=userlist&amp;action=edit_userExtension&amp;rawmode=yes');\"> aqui </a>",
 "Only administrators can delete CDRs" => "Somente administradores podem apagar relatórios de ligações",
+"Billing" => "Faturamento",
+"Rates" => "Tarifas",
+"Billing Report" => "Relatório de Faturamento",
+"Destination Distribution" => "Distribuição por Destino",
+"Billing Setup" => "Configuração de Faturamento",
 );
 ?>
