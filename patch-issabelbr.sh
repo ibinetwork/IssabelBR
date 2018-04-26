@@ -11,14 +11,16 @@ echo "======================================================="
 echo "Patch Brasileiro para Issabel"
 echo "Grupo Telegram http://t.me/issabelbr"
 echo ""
-echo "Atualizando o sistema..."
-echo ""
-yum -y update && yum -y upgrade
+echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
 yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm -y
 updatedb
+echo ""
+echo "Atualizando o sistema..."
+echo ""
+yum -y update && yum -y upgrade
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
 echo ""
