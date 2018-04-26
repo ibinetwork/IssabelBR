@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.0.3"
+versao="1.0.4"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
