@@ -24,3 +24,6 @@ ChangeLog
 
 1.0.5 - 26/04/2018
 * Correção do Features Dialplan para Asterisk 13
+
+1.0.6 - 27/04/2018
+* Removido Recompilação do DAHDI - Lançcada atualização oficial resolve oficialmente o problema
