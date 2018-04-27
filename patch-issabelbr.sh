@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.0.5"
+versao="1.0.6"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -63,13 +63,13 @@ else
  asterisk -rx "module load codec_g729"
 fi
 echo ""
-echo "Recompilando DAHDI"
-echo ""
-cd /usr/src/dahdi-linux-2.11.1/
-make
-make install
-dahdi_tools
-echo ""
+#echo "Recompilando DAHDI"
+#echo ""
+#cd /usr/src/dahdi-linux-2.11.1/
+#make
+#make install
+#dahdi_tools
+#echo ""
 echo "Instalando tratamento Hangup Cause"
 echo ""
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
@@ -89,7 +89,6 @@ echo "  | | / __/ __|/ _\` | '_ \ / _ \ |_     _|  _ <|  _  /"
 echo ' _| |_\__ \__ \ (_| | |_) |  __/ |/ , . \| |_) | | \ \ '
 echo '|_____|___/___/\__,_|_.__/ \___|_|\/|_|\/|____/|_|  \_\'
 echo "======================================================="
-echo ""
 echo ""
 echo "Patch Brasileiro Instalado."
 echo "Participe do grupo Telegram http://t.me/issabelbr"
