@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.0.6"
+versao="1.0.7"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -78,6 +78,16 @@ sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_over
 echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabelpbx.conf
 rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
+echo ""
+echo "Instalando sngrep"
+echo "" 
+cat > /etc/yum.repos.d/irontec.repo <<EOF
+[irontec]
+name=Irontec RPMs repository
+baseurl=http://packages.irontec.com/centos/\$releasever/\$basearch/
+EOF
+rpm --import http://packages.irontec.com/public.key
+yum install sngrep -y
 echo ""
 rm -Rf /usr/src/IssabelBR
 amportal restart
