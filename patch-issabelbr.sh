@@ -81,6 +81,7 @@ chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 echo ""
 echo "Instalando sngrep"
 echo "" 
+rm -Rf /etc/yum.repos.d/irontec.repo
 cat > /etc/yum.repos.d/irontec.repo <<EOF
 [irontec]
 name=Irontec RPMs repository
