@@ -27,3 +27,6 @@ ChangeLog
 
 1.0.6 - 27/04/2018
 * Removido Recompilação do DAHDI - Lançcada atualização oficial resolve oficialmente o problema
+
+1.0.7 - 30/04/2018
+* Adicionado instalação do sngrep
