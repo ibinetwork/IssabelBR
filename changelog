@@ -15,3 +15,18 @@ ChangeLog
 1.0.2 - 24/04/2018
 * Recompilação do DAHDI para resolver a atualização do Kernel e DAHDI
 * Adicionado patch para tratar Hangup Cause - SIP para Ocupado e Numero Inexistente
+
+1.0.3 - 25/04/2018
+* Backup do arquivo original do Relatório de Ligações e do Relatório de Faturamento
+
+1.0.4 - 25/04/2018
+* Tradução do Faturamento
+
+1.0.5 - 26/04/2018
+* Correção do Features Dialplan para Asterisk 13
+
+1.0.6 - 27/04/2018
+* Removido Recompilação do DAHDI - Lançcada atualização oficial resolve oficialmente o problema
+
+1.0.7 - 30/04/2018
+* Adicionado instalação do sngrep

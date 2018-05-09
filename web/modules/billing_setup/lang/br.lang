@@ -22,12 +22,12 @@
   $Id: es.lang,v 1.7 2007/09/05 00:36:42 alex Exp $ */
 global $arrLangModule;
 $arrLangModule = array(
-    "Billing Capable" => "Capacidade de Faturamento",
+    "Billing Capable" => "Habilitar para Faturamento",
     "Trunk Bill Configuration" => "Configuração Fatura do Tronco",
     "Trunk" => "Tronco",
     "Default Rate Configuration" => "Configuração de Tarifa Padrão",
     "Default Rate" => "Tarifa Padrão",
-    "Default Rate Offset" => "Default Rate Offset",
-    "Trunk Bill Configuration"=>"Trunk Bill Configuration",
+    "Default Rate Offset" => "Tarifa de Conexão Padrão",
+    "Trunk Bill Configuration"=>"Configuração da Conta de Tronco",
 );
 ?>
