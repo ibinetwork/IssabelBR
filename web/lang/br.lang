@@ -307,5 +307,10 @@ $arrLang=array(
 "Billing Setup" => "Configuração de Faturamento",
 "Edit" => "Editar",
 "Import File" => "Importar Arquivo",
+"Agent Console" => "Painel do Agente",
+"Outgoing Calls" => "Ligações de Saída",
+"Campaigns" => "Campanha",
+"Do not Call List" => "Lista não Ligar",
+"External URLs" => "URLs Externa",
 );
 ?>
