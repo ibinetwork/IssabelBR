@@ -1,0 +1,123 @@
+<?php
+/* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+  Codificación: UTF-8
+  +----------------------------------------------------------------------+
+  | Issabel version 0.5                                                  |
+  | http://www.issabel.org                                               |
+  +----------------------------------------------------------------------+
+  | Copyright (c) 2006 Palosanto Solutions S. A.                         |
+  +----------------------------------------------------------------------+
+  | The contents of this file are subject to the General Public License  |
+  | (GPL) Version 2 (the "License"); you may not use this file except in |
+  | compliance with the License. You may obtain a copy of the License at |
+  | http://www.opensource.org/licenses/gpl-license.php                   |
+  |                                                                      |
+  | Software distributed under the License is distributed on an "AS IS"  |
+  | basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+  | the License for the specific language governing rights and           |
+  | limitations under the License.                                       |
+  +----------------------------------------------------------------------+
+  | The Initial Developer of the Original Code is PaloSanto Solutions    |
+  +----------------------------------------------------------------------+
+  $Id: es.lang,v 1.7 2007/09/05 00:36:42 alex Exp $ */
+global $arrLangModule;
+$arrLangModule = array(
+    "Outgoing Campaigns" => "Campanhas de saída",
+    "Campaigns" => "Campanhas",
+    "New Campaign" => "Nova Campanha",
+    "Campaigns List" => "Lista de Campanhas",
+    "View Campaign" => "Visualizar Campanha",
+    "Create New Campaign" => "Criar Nova Campanha",
+    "Name Campaign" => "Nome",
+    "Start Date" => "Data inicial",
+    "End Date" => "Data final",
+    "Start Time" => "Hora inicial",
+    "End Time" => "Hora final",
+    "Retries" => "Repetições",
+    "Trunk" => "Tronco",
+    "Queue" => "Fila",
+    "Context" => "Contexto",
+    "Script" => "Script",
+    "Form" => "Formulário",
+    "Completed Calls" => "Chamadas concluídas",
+    "Average Time" => "Tempo médio",
+    "File name" => "Nome do arquivo",
+    "Unable to parse start date specification" => "Não é possível analisar a especificação da data de início",
+    "Unable to parse end date specification" => "Não é possível analisar a especificação da data final",
+    "Unable to parse start time specification" => "Não é possível analisar a especificação do horário de início",
+    "Unable to parse end time specification" => "Não é possível analisar a especificação do horário de término",
+    "Campaign ID is not valid" => "O ID da campanha não é válido",
+    "Name Campaign can't be empty" => " O nome da campnha não pode estar vazia",
+    "Trunk can't be empty" => "O tronco não pode estar vazio",
+    "Context can't be empty" => "Contexto não pode estar vazio",
+    "Retries must be numeric" => "As repetições devem ser numéricas",
+    "Queue can't be empty" => "A fila não pode estar vazia",
+    "Invalid Start Date" => "Data de início inválida",
+    "Invalid End Date" => "Data de término inválida",
+    "Invalid Start Time" => "Hora de início inválida",
+    "Invalid End Time" => "Horário de término inválido",
+    "Start Date must be greater than End Date" => "A data de início deve ser maior que a data de término",
+    "Name Campaign already exists" => "O nome da campanha já existe",
+    "Invalid Campaign ID" => "ID da campanha inválido",
+    "Element without phone number" => "Elemento sem número de telefone",
+    "Edit Campaign" => "Edit Campaign",
+    "Error when Activating the Campaign" => "Erro ao ativar a campanha",
+    "Error when eliminating the Campaign" => "Erro ao eliminar a campanha",
+    "Start Time must be greater than End Time" => "A hora de início deve ser maior que a hora de término",
+    "CSV Data" => "Baixar Relatório",
+    "Phone Customer" => "Telefone do Cliente",
+    "Name Customer" => "Nome do Cliente",
+    "Status Call" => "Status da Chamada",
+    "Status" => "Status",
+    "Options" => "Opções",
+    "Success" => "Sucesso",
+    "Failure" => "Falha",
+    "ShortCall" => "Chamada Curta",
+    "Error when deleting the Campaign" => "Erro ao excluir a campanha",
+    "This campaign have calls done" => "Esta campanha tem chamadas concluídas",
+    "Delete Error" => "Excluir erro",
+    "There aren't form selected" => "Não há formulário selecionado",
+    "To rapair is necesary delete agent from configuration file. Do you want to continue?" => "Para reparar é necessário excluir o agente do arquivo de configuração. Você quer continuar?",
+    "To rapair is necesary add an agent in configuration file. Do you want to continue?" => "Para reparar é necessário adicionar um agente no arquivo de configuração. Você quer continuar?",
+    "Error when desactivating the Campaign" => "Erro ao desativar a campanha",
+    "Desactivate" => "Desativar",
+    "Activate Error" => "Ativar erro",
+    "Desactivate Error" => "Desativar erro",
+    "Queue must be numeric" => "A fila deve ser numérica",
+    "Queue is being used, choose other one" => "A fila está sendo usada, escolha outra",
+    "Address" => "Endereço",
+    "Date & Time" => "Data & Hora",
+    "Duration" => "Duração(Seg)",
+    "Are you sure you wish to delete campaign?" => "em certeza de que deseja excluir a campanha?",
+    "Finish" => "Final",
+    "Active" => "Ativo",
+    "All" => "Todos",
+    "Inactive" => "Inativo",
+    "Range Date" => "Intervalo de Datas",
+    "Start" => "Começar",
+    "End" => "Fim",
+    "Schedule per Day" => "Horário por dia",
+    "Start time" => "Hora de início",
+    "End time" => "Fim do tempo",
+    "Max. used channels" => "Max. canais usados",
+    "View" => "Visualizar",
+    "Activate" => "Ativar",
+    "Campaign state" => "Estado da campanha",
+    "With selection" => "Com seleção",
+    "By Dialplan" => "Por Dialplan",
+    "Manage Trunks" => "Gerenciar troncos",
+    "Manage Queues" => "Gerenciar Filas",
+    "Manage Forms" => "Gerenciar Formulários",
+    "External URLs" => "URLs externos",
+    "Manage External URLs" => "Gerenciar URLs externos",
+    "At least 1 used channel must be allowed." => "Pelo menos 1 canal usado deve ser permitido.",
+    "Campaign must allow at least one call retry" => "A campanha deve permitir pelo menos uma nova tentativa de chamada",
+    "Change Status" => "Alterar status",
+    "(Leave as 0 to disable channel limit)" => "(Deixe como 0 para desabilitar o limite do canal)",
+    "(No external URL)" => "(Sem URL externo)",
+    "Load Contacts" => "Importar Mailing",
+    "Load Contacts for Campaign" => "Carregar contatos para a campanha",
+    "Available uploaders" => "Uploaders disponíveis",
+    "Options for" => "Opções para",
+);
+?>

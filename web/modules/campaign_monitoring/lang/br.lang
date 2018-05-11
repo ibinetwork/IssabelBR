@@ -1,0 +1,128 @@
+<?php
+/* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+  Codificación: UTF-8
+  +----------------------------------------------------------------------+
+  | Issabel version 0.5                                                  |
+  | http://www.issabel.org                                               |
+  +----------------------------------------------------------------------+
+  | Copyright (c) 2006 Palosanto Solutions S. A.                         |
+  +----------------------------------------------------------------------+
+  | The contents of this file are subject to the General Public License  |
+  | (GPL) Version 2 (the "License"); you may not use this file except in |
+  | compliance with the License. You may obtain a copy of the License at |
+  | http://www.opensource.org/licenses/gpl-license.php                   |
+  |                                                                      |
+  | Software distributed under the License is distributed on an "AS IS"  |
+  | basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+  | the License for the specific language governing rights and           |
+  | limitations under the License.                                       |
+  +----------------------------------------------------------------------+
+  | The Initial Developer of the Original Code is PaloSanto Solutions    |
+  +----------------------------------------------------------------------+
+  $Id: es.lang,v 1.2 2007/08/09 00:31:28 jmartinez Exp $ */
+global $arrLangModule;
+$arrLangModule=array(
+'Campaign'
+    =>  'Campanha',
+'Start date'
+    =>  'Data inicial',
+'End date'
+    =>  'Data final',
+'Schedule'
+    =>  'Cronograma',
+'Queue'
+    =>  'Fila',
+'Retries'
+    =>  'Repetições',
+'Total calls'
+    =>  'Total de Chamadas',
+'Pending calls'
+    =>  'Chamadas Pendentes',
+'Failed calls'
+    =>  'Chamadas Não Completadas',
+'Short calls'
+    =>  'Chamadas curtas',
+'Connected calls'
+    =>  'Chamadas completadas',
+'Placing calls'
+    =>  'Colocação de chamadas',
+'Ringing calls'
+    =>  'Chamadas de toque',
+'Queued calls'
+    =>  'Chamadas na fila',
+'Pending calls'
+    =>  'Chamadas pendentes',
+'Abandoned calls'
+    =>  'Chamadas abandonadas',
+'Unanswered calls'
+    =>  'Chamadas não atendidas',
+'Finished calls'
+    =>  'Chamadas concluídas',
+'Lost track'
+    =>  'Faixa perdida',
+'Agents'
+    =>  'Agentes',
+'Average Call Duration'
+    =>  'Duração média das chamadas',
+'Maximum Call Duration'
+    =>  'Chamada com Maior Duração',
+'Free'
+    =>  'Livre',
+'Busy'
+    =>  'Falando',
+'Not Logged In'
+    =>  'Não está logado',
+'Break'
+    =>  'Pausa',
+'Agent'
+    =>  'Agente',
+'Phone Number'
+    =>  'Número de telefone',
+'Trunk'
+    =>  'Tronco',
+'Status'
+    =>  'Estado',
+'Since'
+    =>  'Desde',
+'View campaign log'
+    =>  'Visualizar log da campanha',
+'Placing'   =>  'Enviando',
+'Dialing'   =>  'Discando',
+'Ringing'   =>  'Chamando',
+'OnQueue'   =>  'Na Fila',
+'online'    =>  'Livre',
+'offline'   =>  'Desconectado',
+'oncall'    =>  'Ocupado',
+'paused'    =>  'Em Pausa',
+'LOG_FMT_PLACING'
+    =>  'Enviar chamada telefônica para {phone} (retry {retry})',
+'LOG_FMT_DIALING'
+    =>  'Discagem {phone}, o tronco é {trunk} ...',
+'LOG_FMT_RINGING'
+    =>  'Chamando {phone}, esperando por resposta ...',
+'LOG_FMT_ONQUEUE'
+    =>  'Telefonema para {phone} conectado à fila {queue}, esperando por agente ...',
+'LOG_FMT_SUCCESS'
+    =>  'Telefonema para {phone} manipulado pelo agente {agentchannel}',
+'LOG_FMT_HANGUP'
+    =>  'Telefonema para {phone} desconectado do agente {agentchannel}, duração foi {duration}',
+'LOG_FMT_ONHOLD'
+    =>  'Agente {agentchannel} colocar chamada para {phone} em espera',
+'LOG_FMT_OFFHOLD'
+    =>  'Agente {agentchannel} telefonou para {phone} fora de espera',
+'LOG_FMT_FAILURE'
+    =>  'Telefonema para {phone} não foi colocado',
+'LOG_FMT_ABANDONED'
+    =>  'Telefonema para {phone} na fila {queue} desconectado e nunca foi tratado',
+'LOG_FMT_SHORTCALL'
+    =>  'Telefonema curto para {phone} desconectado do agente {agentchannel}, duração foi {duration}',
+'LOG_FMT_NOANSWER'
+    =>  'Telefonema para {phone} desconectado antes de entrar na fila',
+'outgoing'  =>  'Campanha de saída',
+'incoming'  =>  'Campanha de entrada',
+'incomingqueue' =>  'Fila de entrada',
+'N/A' => 'N/D', /* Not Available */
+'Previous 100 entries' => 'Últimas 100 informações',
+'Hold'=>'Aguarde',
+);
+?>

@@ -1,0 +1,52 @@
+<?php
+global $arrLangModule;
+$arrLangModule = array(
+    "Time conecction of agents"  => "Tempo de conexão de agentes",
+    "Start Date"    => "Data Inicial",
+    "End Date"      => "Data Final",
+    "Query"         => "Query",
+    "No.Agent"      => "No. Agente",
+    "Agent"         => "Agente",
+    "Queue"         => "Fila",
+    "Type"          => "Tipo",
+    "Column"        => "Coluna",
+    "Text"          => "Texto",
+    "Error"         => "Erro",
+    "Transfer"      => "Transferir",
+    "Duration"      => "Duração",
+    "Average"       => "Média",
+    "Total"         => "Total",
+    "Call longest"  => "Chamada Mais Longa",
+    "Calls answered" => "Chamadas atendidas",
+    "Error when connecting to database"    => "Erro ao conectar ao banco de dados",
+    "Debe ingresar una fecha"   => "Você deve inserir uma data",
+    "Debe ingresar una fecha valida"    => "Você deve inserir uma data válida",
+
+
+    'Conecction Data'=>'Dados de Conexão',
+    'First Conecction'=>'Primeira Conexão',
+    'Last Conecction'=>'Última Conexão',
+    'Time Conecction'=>'Tempo de Conexão',
+    'Count Conecction'=>'Contagem de Conexões',
+    'Calls Entry'=>'Chamadas Recebidas',
+    'Reason No Ready'=>'Razão não disponível',
+    'Break'=>'Pausa',
+    'Bathroom'=>'Banheiro',
+    'Call'=>'Ligar',
+    'Count Calls Entry'=>'Contagem de Chamadas de Entrada',
+    'Calls/h'=>'Chamadas/h',
+    'Time Call Entry'=>'Hora das Chamadas Recebidas',
+    'Average Calls Entry'=>'Média de chamadas recebidas',
+
+    'Porcent compare whit time not ready'=> 'Porcentagem de tempo não disponível',
+    'Count'=>'Contagem',
+    'Hour'=>'Hora',
+    'Monitored'=>    'Monitorado',
+    'Unmonitored'=>    'Não monitorado',
+    'Monitored only'=> 'Apenas Monitorado',
+    "There aren't records to show"=> "Não há registros para mostrar",
+    "Agent name" => "Nome do agente",
+
+);
+
+?>

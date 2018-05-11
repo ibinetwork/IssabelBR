@@ -1,0 +1,54 @@
+<?php
+/* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+   Codificación: UTF-8
+  +----------------------------------------------------------------------+
+  | Issabel version 1.2                                                  |
+  | http://www.issabel.org                                               |
+  +----------------------------------------------------------------------+
+  | Copyright (c) 2006 Palosanto Solutions S. A.                         |
+  +----------------------------------------------------------------------+
+  | The contents of this file are subject to the General Public License  |
+  | (GPL) Version 2 (the "License"); you may not use this file except in |
+  | compliance with the License. You may obtain a copy of the License at |
+  | http://www.opensource.org/licenses/gpl-license.php                   |
+  |                                                                      |
+  | Software distributed under the License is distributed on "AS IS"     |
+  | basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+  | the License for the specific language governing rights and           |
+  | limitations under the License.                                       |
+  +----------------------------------------------------------------------+
+  | The Initial Developer of the Original Code is PaloSanto Solutions    |
+  |                                                                      |
+  | Translate by: Alex Villacís Lasso                                    |
+  | Email: a_villacis@palosanto.com                                      |
+  +----------------------------------------------------------------------+
+  $Id: en.lang,v 1.7 2008/02/18 09:49:00 a_villacis Exp $ */
+global $arrLangModule;
+$arrLangModule=array(
+"Configuration" => "Configuração",
+'Password and confirmation do not match.' => 'Senha e confirmação não correspondem.',
+'Could not save changes!' => 'Não foi possível salvar as alterações!',
+'Could not commit changes!' => 'Não foi possível confirmar alterações!',
+'Asterisk Server' => 'Servidor Asterisk',
+'Asterisk Login' => 'Login Asterisk',
+'Asterisk Password' => 'Senha Asterisk',
+'Asterisk Password (confirm)' => 'Senha Asterisk (confirmação)',
+'Short Call Threshold' => 'Limite de Chamadas Curtas',
+'Answering delay' => 'Respondendo o atraso',
+'Enable dialer debug' => 'Ativar depuração do discador',
+'Dump all received Asterisk events' => 'Despejar todos os eventos recebidos do Asterisk',
+'Running' => 'Em andamento',
+'Stopped' => 'Parado',
+'Start' => 'Iniciar',
+'Stop' => 'Parar',
+'Internal DB error' => 'Erro interno no Banco de Dados',
+'Dialer Status' => 'Status do discador',
+'Current Status' => 'Status atual',
+'Enable overcommit of outgoing calls' => 'Ativar supercompromisso de chamadas enviadas',
+'AMI Session Duration' => 'Duração da sessão da AMI (0 para sessão permanente)',
+'Service percent' => 'Percentual do Serviço',
+'Enable predictive dialer behavior' => 'Ativar o discador preditivo',
+'Per-call dial timeout' => 'Tempo limite de discagem por chamada',
+'Agent inactivity timeout' => 'Tempo limite de inatividade do agente',
+);
+?>

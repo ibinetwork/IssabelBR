@@ -1,0 +1,51 @@
+<?php
+/* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+  Codificación: UTF-8
+  +----------------------------------------------------------------------+
+  | Issabel version 0.5                                                  |
+  | http://www.issabel.org                                               |
+  +----------------------------------------------------------------------+
+  | Copyright (c) 2006 Palosanto Solutions S. A.                         |
+  +----------------------------------------------------------------------+
+  | The contents of this file are subject to the General Public License  |
+  | (GPL) Version 2 (the "License"); you may not use this file except in |
+  | compliance with the License. You may obtain a copy of the License at |
+  | http://www.opensource.org/licenses/gpl-license.php                   |
+  |                                                                      |
+  | Software distributed under the License is distributed on an "AS IS"  |
+  | basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+  | the License for the specific language governing rights and           |
+  | limitations under the License.                                       |
+  +----------------------------------------------------------------------+
+  | The Initial Developer of the Original Code is PaloSanto Solutions    |
+  +----------------------------------------------------------------------+
+  $Id: es.lang,v 1.2 2007/08/09 00:31:28 jmartinez Exp $ */
+global $arrLangModule;
+$arrLangModule = array(
+'New URL'   =>  'Novo URL',
+'Opens in'  =>  'Aberto em',
+'Active'   =>  'Ativo',
+'URL Template'   =>  'Modelo de URL',
+'URL Description'   =>  'URL Descrição',
+'Description'   =>  'Descrição',
+'New window'   =>  'Nova janela',
+'Embedded'   =>  'embutido',
+'Embedded frame'   =>  'Moldura embutida',
+'Apply changes' =>  'Aplicar mudanças',
+'Enable use of this template' => 'Ativar o uso deste modelo',
+'Open URL in' => 'Abrir URL em',
+
+'TEMPLATE_DESC' => "O modelo de URL pode conter marcadores nomeados em cacheados ".
+    "colchetes, como {HomeAddress}, que serão substituídos por reais ".
+    "valores de escape para cada chamada conectada. Os identificadores disponíveis são os ".
+    "nomes dos atributos de chamada (diferencia maiúsculas de minúsculas), além do seguinte padrão ".
+    "attributes of the call:\n\n".
+    "{__AGENT_NUMBER__} Identificador de canal do agente, como agente/9000\n".
+    "{__CALL_TYPE__} ou 'incoming' ou 'outgoing'\n".
+    "{__CAMPAIGN_ID__} ID interno da campanha atual\n".
+    "{__CALL_ID__} ID interno da chamada conectada atual\n".
+    "{__PHONE__} Número discado ou identificador de chamadas da chamada conectada\n".
+    "{__REMOTE_CHANNEL__} Identificador de canal da chamada conectada\n".
+    "",
+);
+?>

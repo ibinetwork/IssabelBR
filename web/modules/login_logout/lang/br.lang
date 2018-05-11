@@ -1,0 +1,50 @@
+<?php
+/* vim: set expandtab tabstop=4 softtabstop=4 shiftwidth=4:
+  Codificación: UTF-8
+  +----------------------------------------------------------------------+
+  | Issabel version 0.5                                                  |
+  | http://www.issabel.org                                               |
+  +----------------------------------------------------------------------+
+  | Copyright (c) 2006 Palosanto Solutions S. A.                         |
+  +----------------------------------------------------------------------+
+  | The contents of this file are subject to the General Public License  |
+  | (GPL) Version 2 (the "License"); you may not use this file except in |
+  | compliance with the License. You may obtain a copy of the License at |
+  | http://www.opensource.org/licenses/gpl-license.php                   |
+  |                                                                      |
+  | Software distributed under the License is distributed on an "AS IS"  |
+  | basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See  |
+  | the License for the specific language governing rights and           |
+  | limitations under the License.                                       |
+  +----------------------------------------------------------------------+
+  | The Initial Developer of the Original Code is PaloSanto Solutions    |
+  +----------------------------------------------------------------------+
+   */
+global $arrLangModule;
+$arrLangModule=array(
+"Error when connecting to database" => "Erro ao conectar ao banco de dados",
+"Error"                             => "Erro",
+"Debe ingresar una fecha valida"    => "Coloque uma data válida",
+"Debe ingresar una fecha inicio/fin"=> "Você deve inserir uma data de início/término",
+"Login Logout"                      => "Tempo Login-Logout",
+"Agente"                            => "Agente",
+"Nombre"                            => "Nome",
+"Login"                             => "Login",
+"Logout"                            => "Logout",
+"Total Login"                       => "Tempo Logado",
+"Tiempo en Llamadas"                => "Tempo em Ligações",
+"Service(%)"                        => "Serviço(%)",
+"Date Init"                         => "Data Inicial",
+"Date End"                          => "Data Final",
+"Tipo"                              => "Tipo",
+"Find"                              => "Encontrar",
+"Estado"                            => "Estado",
+"Total"                             => "Total",
+"Detallado"                         => "Detalhado",
+"General"                           => "Geral",
+'Incoming Queue'                    => 'Fila de entrada',
+'All'                               => 'Todos',
+'Llamadas entrantes'                =>  'Chamadas recebidas',
+'Llamadas salientes'                =>  'Chamadas efetuadas',
+);
+?>

@@ -1,0 +1,33 @@
+<?php
+global $arrLangModule; 
+ $arrLangModule = array(
+'List Break'     => "Lista de Pausa",
+'agent'          => "Agente",
+'break'          => "Tipo de Pausa",
+'time_init'      => "Tempo Inicial",
+'time_end'       => "Tempo Final",
+'duration'       => "Duração",
+"Name"           => "Nome",
+'Reports Break'  => "Relatórios de Pausa",
+'Agent Name'     => "Nome do Agente",
+'Break'          => "Pausa",
+'query'          => "Encontrar",
+"Start Date"    => "Data Inicial",
+"End Date"      => "Data Final",
+'generate file'  => "Gerar arquivo",
+'Agent Number'   => "No. Agente",
+'Total'          => "Total",
+"Error"                                      => "Erro",
+"Warning"                                    => "Atenção",
+"Error when connecting to database"          => "Erro ao conectar-se ao banco de dados",
+"Error when creating object paloSantoReportsBreak" => "Erro ao criar paloSantoReportsBreak",
+"Error cargando listado de tipos de breaks"  => "Erro ao carregar lista de tipos de pausas",
+"Error cargando listado de agentes"          => "Erro ao carregar lista de agentes",
+"Error cargando listado de breaks tomados"   => "Erro ao carregar lista de pausas usadas",
+"Debe ingresar una fecha"                    => "Você deve inserir qualquer data",
+"Debe ingresar una fecha valida"             => "Você deve inserir uma data válida",
+"Validation Error"                           => "Erro de Validação",
+"The following fields contain errors"        => "Os campos a seguir contêm erros",
+"No register break in database"              => "Nenhuma pausa de registro no banco de dados",
+);
+?>
