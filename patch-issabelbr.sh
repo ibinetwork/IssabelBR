@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.0.8"
+versao="1.0.9"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -15,7 +15,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm -y
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm issabel-callcenter -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
