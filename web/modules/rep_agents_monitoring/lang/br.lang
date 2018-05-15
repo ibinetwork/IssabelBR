@@ -25,16 +25,15 @@ $arrLangModule=array(
 "Agents Monitoring" => "Monitoramento de Agentes",
 "Queue" => "Fila",
 "Agent" => "Agente",
-"Current status" => "Status Atual",
+"Current status" => "Estado atual",
 "Total calls" => "Total de chamadas",
 "Total login time" => "Tempo Total de Login",
 "Total talk time" => "Tempo Total de Conversação",
 "No registered" => "Não registrado",
-"LOGOUT" => "LOGOUT",
+"LOGOUT" => "DESLOGADO",
 "Agent" => "Agente",
 "Agents" => "Agentes",
 "Total" => "Total",
 "Number" => "Número",
-
-
+"LOGIN" => "LOGADO"
 );?>
