@@ -27,6 +27,7 @@ echo ""
 svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
 cp /var/www/html/modules/billing_report/index.php /var/www/html/modules/billing_report/index.php.bkp
 cp /var/www/html/modules/cdrreport/index.php /var/www/html/modules/cdrreport/index.php.bkp
+cp /var/www/html/modules/campaign_monitoring/index.php /var/www/html/modules/campaign_monitoring/index.php.bkp
 rsync --progress -r -u /usr/src/IssabelBR/web/ /var/www/html/
 amportal restart
 echo ""
