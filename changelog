@@ -33,3 +33,7 @@ ChangeLog
 
 1.0.8 - 11/05/2018
 * Adicionado traduções para módulo Call Center
+
+1.0.9 - 15/05/2018
+* Instalação do Call Center por padrão
+* Adicionado patch para Monitoramento da Campanha exibir o nome do Agente e não o numero
