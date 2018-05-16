@@ -312,5 +312,18 @@ $arrLang=array(
 "Campaigns" => "Campanha",
 "Do not Call List" => "Lista não Ligar",
 "External URLs" => "URLs Externa",
+"Ingoing Calls" => "Ligações de Entrada",
+"Queues" => "Filas",
+"Clients" => "Clientes",
+"Ingoings Campaigns" => "Campanhas de Entrada",
+"Agent Options" => "Opções de Agente",
+"Agents" => "Agentes",
+"ECCP Users" => "Usuários ECCP",
+"Callback Extensions" => "Ramais Callback",
+"Breaks" => "Pausas",
+"Forms" => "Formulários",
+"Form Designer" => "Designer de formulários",
+"Form Preview" => "Pré-visualização de formulário",
+"Configuration" => "Configuração",
 );
 ?>
