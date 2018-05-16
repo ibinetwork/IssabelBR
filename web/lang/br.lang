@@ -325,5 +325,18 @@ $arrLang=array(
 "Form Designer" => "Designer de formulários",
 "Form Preview" => "Pré-visualização de formulário",
 "Configuration" => "Configuração",
+"Reports Break" => "Relatórios de Pausa",
+"Calls Detail" => "Detalhe das Ligações",
+"Calls per hour" => "Ligações por Hora",
+"Calls per Agent" => "Ligações por Agente",
+"Hold Time" => "Tempo de Espera",
+"Login Logout" => "Entrada/Saída",
+"Ingoing Calls Success" => "Ligações Recebidas com Sucesso",
+"Graphic Calls per hour" => "Gráfico de Ligações por Hora",
+"Agent Information" => "Informação do Agente",
+"Agents Monitoring" => "Monitoramento de Agentes",
+"Trunks used per hour" => "Troncos Usados por Hora",
+"Incoming calls monitoring" => "Monitoramento de Ligações de Entrada",
+"Campaign monitoring" => "Monitoramento de Campanhas",
 );
 ?>
