@@ -22,14 +22,13 @@
   $Id: en.lang,v 1.1.1.1 2009/07/27 09:10:19 dlopez Exp $ */
 global $arrLangModule;
 $arrLangModule=array(
-"Incoming calls monitoring" => "Monitoramento de Chamadas Recebidas",
+"Incoming calls monitoring" => "Monitoramento de Ligações de Entrada",
 "Queue" => "Fila",
 "Entered" => "Entrou",
 "Answered" => "Respondidas",
-"Abandoned" => "Abandonado",
-"Waiting calls" => "Chamadas em Espera",
+"Abandoned" => "Abandonada",
+"Waiting calls" => "Ligações em Espera",
 "Without monitoring" => "Sem monitoramento",
 "Total" => "Total",
-
 );
 ?>
