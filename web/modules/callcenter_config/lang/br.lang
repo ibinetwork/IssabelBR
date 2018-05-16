@@ -42,13 +42,15 @@ $arrLangModule=array(
 'Start' => 'Iniciar',
 'Stop' => 'Parar',
 'Internal DB error' => 'Erro interno no Banco de Dados',
-'Dialer Status' => 'Status do discador',
-'Current Status' => 'Status atual',
+'Dialer Status' => 'Estado do discador',
+'Current Status' => 'Estado atual',
 'Enable overcommit of outgoing calls' => 'Ativar supercompromisso de chamadas enviadas',
 'AMI Session Duration' => 'Duração da sessão da AMI (0 para sessão permanente)',
 'Service percent' => 'Percentual do Serviço',
 'Enable predictive dialer behavior' => 'Ativar o discador preditivo',
 'Per-call dial timeout' => 'Tempo limite de discagem por chamada',
 'Agent inactivity timeout' => 'Tempo limite de inatividade do agente',
+"Asterisk Connection" => "Conexão do Asterisk",
+"Dialer Parameters" => "Parametros do Discador",
 );
 ?>
