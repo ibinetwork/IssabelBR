@@ -30,6 +30,6 @@ global $arrLangModule;
 "Validation Error"                           => "Erro de Validação",
 "The following fields contain errors"        => "Os campos a seguir contêm erros",
 "No register break in database"              => "Nenhuma pausa de registro no banco de dados",
-"Hold" => "Tempo em Pausa",
+"breaks" => "Tempo em Pausa",
 );
 ?>
