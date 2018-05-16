@@ -118,7 +118,7 @@ $arrLangModule=array(
 'Manage Forms'=>'Gerenciar Formulários',
 'External URLs' => 'URLs externa',
 'Manage External URLs' => 'Gerenciar URLs externos',
-'Change Status' => 'Alterar status',
+'Change Status' => 'Alterar Estado',
 '(No external URL)'=>'(Nenhuma URL externa)',
 );
 ?>

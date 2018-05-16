@@ -4,7 +4,7 @@ $arrLangModule=array(
 "Form List"=>"Lista de formulários",
 "Form Name" => "Nome",
 "Form Description" => "Descrição",
-"Status"=>"Status",
+"Status"=>"Estado",
 "Options"=>"Opções",
 "List Item"=>"Item de lista",
 "Type"=>"Tipo",
@@ -22,6 +22,4 @@ $arrLangModule=array(
 "Form"=>"Formulário",
 "Forms" => "Formulários",
 );
-
-
 ?>

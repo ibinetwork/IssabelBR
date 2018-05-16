@@ -39,5 +39,6 @@ $arrLangModule = array(
     'All Queues'    => 'Todas as filas',
     'Inbound'       => 'Entrada',
     'Outbound'      => 'Saída',
+    "Recording"    => "Gravação",
 );
 ?>
