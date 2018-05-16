@@ -43,6 +43,6 @@ $arrLangModule=array(
 "Error when desactivating the Break" => "Erro ao desativar a quebra",
 "Desactivate"=>"Desativar",
 "Activate"=>"Ativar",
-"Status"=>"Status",
+"Status"=>"Estado",
 )   
 ?>
