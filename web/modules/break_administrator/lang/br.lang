@@ -44,5 +44,6 @@ $arrLangModule=array(
 "Desactivate"=>"Desativar",
 "Activate"=>"Ativar",
 "Status"=>"Estado",
+"Apply Changes" => "Aplicar Alterações",
 )   
 ?>
