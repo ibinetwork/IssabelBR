@@ -28,7 +28,7 @@ svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
 cp /var/www/html/modules/billing_report/index.php /var/www/html/modules/billing_report/index.php.bkp
 cp /var/www/html/modules/cdrreport/index.php /var/www/html/modules/cdrreport/index.php.bkp
 cp /var/www/html/modules/campaign_monitoring/index.php /var/www/html/modules/campaign_monitoring/index.php.bkp
-rsync --progress -r -u /usr/src/IssabelBR/web/ /var/www/html/
+rsync --progress -r /usr/src/IssabelBR/web/ /var/www/html/
 amportal restart
 echo ""
 echo "Instalando audio em Português Brasil"
@@ -77,7 +77,7 @@ sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_over
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabelpbx.conf
 echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabelpbx.conf
-rsync --progress -r -u /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
+rsync --progress -r /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 echo ""
 echo "Instalando sngrep"
