@@ -37,3 +37,6 @@ ChangeLog
 1.0.9 - 15/05/2018
 * Instalação do Call Center por padrão
 * Adicionado patch para Monitoramento da Campanha exibir o nome do Agente e não o numero
+
+1.1.0 - 29/05/2018
+* Adicionado defaltulanguage=pt_BR no Asterisk.conf - Configuração geral
