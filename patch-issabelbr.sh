@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.0.9"
+versao="1.1.0"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -38,6 +38,8 @@ sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
 sed -i '/language=pt_BR/d' /etc/asterisk/iax_general_custom.conf
 echo "language=pt_BR" >> /etc/asterisk/iax_general_custom.conf
+sed -i '/defaultlanguage=pt_BR/d' /etc/asterisk/asterisk.conf
+echo "defaultlanguage=pt_BR" >> /etc/asterisk/asterisk.conf
 echo ""
 echo "Instalando codec g729"
 echo ""
