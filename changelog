@@ -23,7 +23,7 @@ ChangeLog
 * Tradução do Faturamento
 
 1.0.5 - 26/04/2018
-* Correção do Features Dialplan para Asterisk 13
+* Correção do Features Dialplan para Asterisk 13 // Contribuição do Mike Teliusk
 
 1.0.6 - 27/04/2018
 * Removido Recompilação do DAHDI - Lançcada atualização oficial resolve oficialmente o problema
@@ -40,3 +40,6 @@ ChangeLog
 
 1.1.0 - 29/05/2018
 * Adicionado defaltulanguage=pt_BR no Asterisk.conf - Configuração geral
+
+1.1.1 - 05/06/2018
+* Adicionado correção na busca e exibição das gravações do Issabel // Contribuição do Rhuan Soares
