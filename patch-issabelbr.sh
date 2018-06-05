@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.1.0"
+versao="1.1.1"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -27,6 +27,7 @@ echo ""
 svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
 cp /var/www/html/modules/billing_report/index.php /var/www/html/modules/billing_report/index.php.bkp
 cp /var/www/html/modules/cdrreport/index.php /var/www/html/modules/cdrreport/index.php.bkp
+cp /var/www/html/modules/monitoring/index.php /var/www/html/modules/monitoring/index.php.bkp
 cp /var/www/html/modules/campaign_monitoring/index.php /var/www/html/modules/campaign_monitoring/index.php.bkp
 rsync --progress -r /usr/src/IssabelBR/web/ /var/www/html/
 amportal restart
