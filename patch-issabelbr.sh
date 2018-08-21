@@ -16,7 +16,7 @@ echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
 yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm issabel-callcenter -y
-updatedb
+updatedb --disablerepo=iperfex
 echo ""
 echo "Atualizando o sistema..."
 echo ""
