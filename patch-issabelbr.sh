@@ -15,12 +15,12 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm issabel-callcenter -y
-updatedb --disablerepo=iperfex
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm issabel-callcenter --disablerepo=iperfex -y
+updatedb
 echo ""
 echo "Atualizando o sistema..."
 echo ""
-yum -y update && yum -y upgrade
+yum --disablerepo=iperfex -y update && yum --disablerepo=iperfex -y upgrade
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
 echo ""
@@ -92,7 +92,7 @@ name=Irontec RPMs repository
 baseurl=http://packages.irontec.com/centos/\$releasever/\$basearch/
 EOF
 rpm --import http://packages.irontec.com/public.key
-yum install sngrep -y
+yum --disablerepo=iperfex install sngrep -y
 echo ""
 rm -Rf /usr/src/IssabelBR
 amportal restart
