@@ -43,3 +43,6 @@ ChangeLog
 
 1.1.1 - 05/06/2018
 * Adicionado correção na busca e exibição das gravações do Issabel // Contribuição do Rhuan Soares
+
+1.1.3 - 10/10/2018
+* Adicionado um Checkbox com opção de esconder os 'Desconectados' no Módulo Call Center // Contribuição do Renato Siqueira
