@@ -124,5 +124,6 @@ $arrLangModule=array(
 'N/A' => 'N/D', /* Not Available */
 'Previous 100 entries' => 'Últimas 100 informações',
 'Hold'=>'Aguarde',
+'Hide Offline Agents'=>'Esconder Agentes Desconectados',
 );
 ?>
