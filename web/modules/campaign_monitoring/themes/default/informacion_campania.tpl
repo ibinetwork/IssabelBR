@@ -137,7 +137,7 @@
             <table>
                 {literal}{{#view tagName="tbody"}}
                 {{#each agentes}}
-                    <tr {{bindAttr class="reciente estado"}}>
+                    <tr {{bindAttr class="reciente desde"}}>
                         <td width="20%" nowrap="nowrap">{{canal}}</td>
                         <td width="14%" nowrap="nowrap">{{estado}}</td>
                         <td width="23%" nowrap="nowrap">{{numero}}</td>
@@ -151,12 +151,13 @@
     </td>
 </tr></table>
 
-<input onClick="toggleOffline();" type="checkbox" value="hideShow"> Esconder Desconectados
+<input onClick="toggleOffline();" type="checkbox" value="hideShow" id="hideShow">
+<label for="hideShow">{{$ETIQUETA_OCULTAR_AGENTES}}</label>
 <br/>
 
 {* Registro de actividad de la campaña *}
 {literal}{{view Ember.Checkbox checkedBinding="registroVisible"}}{/literal}
-<b>{$ETIQUETA_REGISTRO}: </b><br/>
+<label for="ember332"><b>{$ETIQUETA_REGISTRO}: </b></label><br/>
 {literal}{{#if registroVisible}}
 <button class="button" {{action "cargarprevios" }}>{/literal}{$PREVIOUS_N}{literal}</button>
 {{#view App.RegistroView class="registro" }}
@@ -174,7 +175,7 @@
 </div>
 <script>
 function toggleOffline(){
-    var elems = document.getElementsByClassName('Desconectado');
+    var elems = document.getElementsByClassName('-');
     for (i = 0; i < elems.length; i++) {
         var elem = elems[i];
         if(elem.style.display == 'none')
