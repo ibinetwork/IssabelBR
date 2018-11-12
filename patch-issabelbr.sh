@@ -15,7 +15,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm issabel-callcenter --disablerepo=iperfex -y
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter --disablerepo=iperfex -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
