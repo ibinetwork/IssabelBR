@@ -46,3 +46,6 @@ ChangeLog
 
 1.1.3 - 10/10/2018
 * Adicionado um Checkbox com opção de esconder os 'Desconectados' no Módulo Call Center // Contribuição do Renato Siqueira
+
+1.1.4 - 07/02/2019
+* Adicionado arquivos para funcionar CallCenter no Asterisk 13
