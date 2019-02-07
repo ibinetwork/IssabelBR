@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.1.3"
+versao="1.1.4"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -15,7 +15,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter --disablerepo=iperfex -y
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
@@ -54,6 +54,8 @@ if [[ "$release" = "13" ]]; then
  cp /usr/src/IssabelBR/codecs/codec_g729-ast130-gcc4-glibc2.2-x86_64-pentium4.so /usr/lib64/asterisk/modules/codec_g729.so
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
  asterisk -rx "module load codec_g729"
+ rsync --progress -r -u /usr/src/IssabelBR/callcenter13/ /opt/issabel/dialer/
+ chown asterisk.asterisk /opt/issabel/dialer/
  echo ""
  echo "Ajustando arquivo features.conf para Asterisk 13"
  echo ""
