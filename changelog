@@ -49,3 +49,6 @@ ChangeLog
 
 1.1.4 - 07/02/2019
 * Adicionado arquivos para funcionar CallCenter no Asterisk 13
+
+1.1.5 - 22/02/2019
+* Adicionado solução para call groups
