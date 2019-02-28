@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.1.5"
+versao="1.1.6"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -20,7 +20,7 @@ updatedb
 echo ""
 echo "Atualizando o sistema..."
 echo ""
-yum --disablerepo=iperfex -y update && yum --disablerepo=iperfex -y upgrade
+yum -y update && yum -y upgrade
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
 echo ""
@@ -95,8 +95,21 @@ name=Irontec RPMs repository
 baseurl=http://packages.irontec.com/centos/\$releasever/\$basearch/
 EOF
 rpm --import http://packages.irontec.com/public.key
-yum --disablerepo=iperfex install sngrep -y
+yum install sngrep -y
 echo ""
+echo "REMOVENDO CADASTRO TELA INDEX"
+echo ""
+sed -i -r 's/666699/33697B/' /var/www/html/modules/pbxadmin/themes/default/css/mainstyle.css
+sed -i -r 's/666699/33697B/' /var/www/html/admin/assets/css/mainstyle.css
+sed '/neo-modal-issabel-popup-box/d' /var/www/html/themes/tenant/_common/index.tpl
+sed '/neo-modal-issabel-popup-title/d' /var/www/html/themes/tenant/_common/index.tpl
+sed '/neo-modal-issabel-popup-close/d' /var/www/html/themes/tenant/_common/index.tpl
+sed '/neo-modal-issabel-popup-content/d' /var/www/html/themes/tenant/_common/index.tpl
+sed '/neo-modal-issabel-popup-blockmask/d' /var/www/html/themes/tenant/_common/index.tpl
+echo ""
+echo "ALTERANDO MUSICONHOLD AGENTS"
+echo ""
+sed -i -r 's/;musiconhold=default/musiconhold=none/' /etc/asterisk/agents.conf
 rm -Rf /usr/src/IssabelBR
 amportal restart
 clear
