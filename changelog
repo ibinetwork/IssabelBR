@@ -52,3 +52,7 @@ ChangeLog
 
 1.1.5 - 22/02/2019
 * Adicionado solução para call groups
+
+1.1.6 - 28/02/2019
+* Removido PopUp de Cadastro
+* Alterado musiconhold dos Agentes para Silencio
