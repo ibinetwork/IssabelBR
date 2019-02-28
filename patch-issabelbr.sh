@@ -101,11 +101,11 @@ echo "REMOVENDO CADASTRO TELA INDEX"
 echo ""
 sed -i -r 's/666699/33697B/' /var/www/html/modules/pbxadmin/themes/default/css/mainstyle.css
 sed -i -r 's/666699/33697B/' /var/www/html/admin/assets/css/mainstyle.css
-sed '/neo-modal-issabel-popup-box/d' /var/www/html/themes/tenant/_common/index.tpl
-sed '/neo-modal-issabel-popup-title/d' /var/www/html/themes/tenant/_common/index.tpl
-sed '/neo-modal-issabel-popup-close/d' /var/www/html/themes/tenant/_common/index.tpl
-sed '/neo-modal-issabel-popup-content/d' /var/www/html/themes/tenant/_common/index.tpl
-sed '/neo-modal-issabel-popup-blockmask/d' /var/www/html/themes/tenant/_common/index.tpl
+sed -i '/neo-modal-issabel-popup-box/d' /var/www/html/themes/tenant/_common/index.tpl
+sed -i '/neo-modal-issabel-popup-title/d' /var/www/html/themes/tenant/_common/index.tpl
+sed -i '/neo-modal-issabel-popup-close/d' /var/www/html/themes/tenant/_common/index.tpl
+sed -i '/neo-modal-issabel-popup-content/d' /var/www/html/themes/tenant/_common/index.tpl
+sed -i '/neo-modal-issabel-popup-blockmask/d' /var/www/html/themes/tenant/_common/index.tpl
 echo ""
 echo "ALTERANDO MUSICONHOLD AGENTS"
 echo ""
