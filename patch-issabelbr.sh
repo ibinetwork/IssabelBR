@@ -86,6 +86,8 @@ rsync --progress -r /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 echo ""
 chown -Rf asterisk.asterisk /var/lib/asterisk/agi-bin/*
+chown -Rf asterisk.asterisk /var/lib/asterisk/agi-bin/*
+chown -Rf asterisk.asterisk /var/lib/asterisk/agi-bin/*
 echo "Instalando sngrep"
 echo "" 
 rm -Rf /etc/yum.repos.d/irontec.repo
