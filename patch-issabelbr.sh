@@ -44,6 +44,17 @@ echo "defaultlanguage=pt_BR" >> /etc/asterisk/asterisk.conf
 echo ""
 echo "Instalando codec g729"
 echo ""
+echo "Instalando tratamento Hangup Cause"
+echo ""
+sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
+sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
+sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabelpbx.conf
+echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabelpbx.conf
+rsync --progress -r /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
+chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
+echo ""
+chown -R asterisk.asterisk /var/lib/asterisk/agi-bin/*
+chown -R asterisk.asterisk /var/lib/asterisk/agi-bin/
 test=`asterisk -V | grep "13"`
 if [[ -z $test ]]; then
  release="11"
@@ -63,6 +74,9 @@ if [[ "$release" = "13" ]]; then
  CHECKFILE=$(sed '63!d' /var/www/html/admin/modules/parking/functions.inc/dialplan.php); if [[ "${CHECKFILE}" == *"addFeatureGeneral('parkedplay"* ]]; then sed -i '63d' /var/www/html/admin/modules/parking/functions.inc/dialplan.php; echo "Ajuste efetuado"; else echo "Não é necessário efetuar o ajuste"; fi
  sed -i '/parkedplay=both/d' /etc/asterisk/features_general_additional.conf
  echo ""
+ yum install asterisk13-sqlite3.x86_64 -yum
+ mv /etc/asterisk/cdr_sqlite3_custom.conf /etc/asterisk/cdr_sqlite3_custom.conf.bkp
+ mv /etc/asterisk/cdr_sqlite3_custom_a13.conf /etc/asterisk/cdr_sqlite3_custom.conf
 else
  cp /usr/src/IssabelBR/codecs/codec_g729-ast110-gcc4-glibc-x86_64-pentium4.so /usr/lib64/asterisk/modules/codec_g729.so
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
@@ -76,17 +90,6 @@ echo ""
 #make install
 #dahdi_tools
 #echo ""
-echo "Instalando tratamento Hangup Cause"
-echo ""
-sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
-sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
-sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabelpbx.conf
-echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabelpbx.conf
-rsync --progress -r /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
-chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
-echo ""
-chown -R asterisk.asterisk /var/lib/asterisk/agi-bin/*
-chown -R asterisk.asterisk /var/lib/asterisk/agi-bin/
 echo "Instalando sngrep"
 echo "" 
 rm -Rf /etc/yum.repos.d/irontec.repo
