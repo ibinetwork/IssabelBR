@@ -9,7 +9,13 @@ echo ' _| |_\__ \__ \ (_| | |_) |  __/ |/ , . \| |_) | | \ \ '
 echo '|_____|___/___/\__,_|_.__/ \___|_|\/|_|\/|____/|_|  \_\'
 echo "======================================================="
 echo "Patch Brasileiro para Issabel"
+echo "Autor Rafael Tavares - Empresa Ibinetwork Informática"
+echo "https://www.ibinetwork.com.br / 011 3042-1234"
+echo "======================================================="
+echo ""
+echo "Contribuição da Comunidade"
 echo "Grupo Telegram http://t.me/issabelbr"
+sleep 20
 echo ""
 echo "INICIANDO O PROCESSO..."
 echo ""
