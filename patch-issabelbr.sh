@@ -81,8 +81,8 @@ if [[ "$release" = "13" ]]; then
  sed -i '/parkedplay=both/d' /etc/asterisk/features_general_additional.conf
  echo ""
  yum install asterisk13-sqlite3.x86_64 -y
- mv /etc/asterisk/cdr_sqlite3_custom.conf /etc/asterisk/cdr_sqlite3_custom.conf.bkp
- mv /etc/asterisk/cdr_sqlite3_custom_a13.conf /etc/asterisk/cdr_sqlite3_custom.conf
+ mv -n /etc/asterisk/cdr_sqlite3_custom.conf /etc/asterisk/cdr_sqlite3_custom.conf.bkp
+ mv -n /etc/asterisk/cdr_sqlite3_custom_a13.conf /etc/asterisk/cdr_sqlite3_custom.conf
 else
  cp /usr/src/IssabelBR/codecs/codec_g729-ast110-gcc4-glibc-x86_64-pentium4.so /usr/lib64/asterisk/modules/codec_g729.so
  chmod 755 /usr/lib64/asterisk/modules/codec_g729.so
