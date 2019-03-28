@@ -80,7 +80,7 @@ if [[ "$release" = "13" ]]; then
  CHECKFILE=$(sed '63!d' /var/www/html/admin/modules/parking/functions.inc/dialplan.php); if [[ "${CHECKFILE}" == *"addFeatureGeneral('parkedplay"* ]]; then sed -i '63d' /var/www/html/admin/modules/parking/functions.inc/dialplan.php; echo "Ajuste efetuado"; else echo "Não é necessário efetuar o ajuste"; fi
  sed -i '/parkedplay=both/d' /etc/asterisk/features_general_additional.conf
  echo ""
- yum install asterisk13-sqlite3.x86_64 -yum
+ yum install asterisk13-sqlite3.x86_64 -y
  mv /etc/asterisk/cdr_sqlite3_custom.conf /etc/asterisk/cdr_sqlite3_custom.conf.bkp
  mv /etc/asterisk/cdr_sqlite3_custom_a13.conf /etc/asterisk/cdr_sqlite3_custom.conf
 else
