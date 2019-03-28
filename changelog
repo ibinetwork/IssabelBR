@@ -56,3 +56,6 @@ ChangeLog
 1.1.6 - 28/02/2019
 * Removido PopUp de Cadastro
 * Alterado musiconhold dos Agentes para Silencio
+
+1.1.7 - 28/03/2019
+* Resolvido informações no banco de dados sqlite3 para billing // Patrocionida pea Netscience
