@@ -1,0 +1,1 @@
+localectl set-keymap us
