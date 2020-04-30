@@ -23,12 +23,16 @@ Codificación: UTF-8
 +----------------------------------------------------------------------+
 | The Initial Developer of the Original Code is PaloSanto Solutions    |
 +----------------------------------------------------------------------+
-$Id: br.lang,v 1.0 2017/10/24 01:00:00 Ibinetwork Informática - rafael@ibinetwork.com.br */
+$Id: br.lang, 2020/04/30 - Ibinetwork Informática - rafael@ibinetwork.com.br */
 global $arrLangModule;
 $arrLangModule=array(
+"EVERYDAYBACKUP" => "Todos os dias backups com mais de",
+"WILLBEDELETED" => "dias serão excluídos automaticamente",
 "Are you sure you wish to delete backup (s)?" => "Are you sure you wish to delete backup (s)?",
 "Database" => "Banco de Dados",
 "PDF" => "PDF",
+"DAY" => "dia",
+"DAYS" => "dias",
 "Endpoint" => "Endpoint",
 "Asterisk" => "Asterisk",
 "All options (Fax)" => "Todas opções (Fax)",
