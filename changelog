@@ -59,3 +59,9 @@ ChangeLog
 
 1.1.7 - 28/03/2019
 * Resolvido informações no banco de dados sqlite3 para billing no Asterisk 13 // Patrocinado pela Netscience
+
+1.2.0 - 30/04/2020
+* Removido verificação da versão e instalação do g729
+  (Ja vem instalado por padrão e a verificação era para instalar o g729 de acordo com a versão do asterisk)
+* Desativado a remoção do Popup de Cadastro (Agora funciona, faz o registro ;) )
+* Pequena atualização na tradução do módulo backup
