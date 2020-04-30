@@ -19,7 +19,7 @@
   +----------------------------------------------------------------------+
   | The Initial Developer of the Original Code is PaloSanto Solutions    |
   +----------------------------------------------------------------------+
-  $Id: es.lang,v 1.7 2007/09/05 00:36:42 alex Exp $ */
+  $Id: br.lang, 2020/04/30 Rafael Tavares - Ibinetwork Informática */
 global $arrLangModule;
 $arrLangModule = array(
     "Outgoing Campaigns" => "Campanhas ativas",
