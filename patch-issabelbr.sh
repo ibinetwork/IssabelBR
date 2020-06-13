@@ -106,6 +106,8 @@ yum install sngrep -y
 echo ""
 wget https://bintray.com/ookla/rhel/rpm -O /etc/yum.repos.d/bintray-ookla-rhel.repo
 yum install speedtest -y
+wget -O /usr/bin/speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+chmod +x /usr/bin/speedtest-cli
 #echo "REMOVENDO CADASTRO TELA INDEX"
 echo ""
 sed -i -r 's/666699/33697B/' /var/www/html/modules/pbxadmin/themes/default/css/mainstyle.css
