@@ -104,6 +104,8 @@ EOF
 rpm --import http://packages.irontec.com/public.key
 yum install sngrep -y
 echo ""
+wget https://bintray.com/ookla/rhel/rpm -O /etc/yum.repos.d/bintray-ookla-rhel.repo
+yum install speedtest -y
 #echo "REMOVENDO CADASTRO TELA INDEX"
 echo ""
 sed -i -r 's/666699/33697B/' /var/www/html/modules/pbxadmin/themes/default/css/mainstyle.css
