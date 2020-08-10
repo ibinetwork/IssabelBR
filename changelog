@@ -65,3 +65,6 @@ ChangeLog
   (Ja vem instalado por padrão e a verificação era para instalar o g729 de acordo com a versão do asterisk)
 * Desativado a remoção do Popup de Cadastro (Agora funciona, faz o registro ;) )
 * Pequena atualização na tradução do módulo backup
+
+1.2.1 - 10/08/2020
+* Add correção de audios pt-br // Contribuição do Luciano VoipEasy
