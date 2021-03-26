@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.2.1"
+versao="1.2.2"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -21,7 +21,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter -y
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter lame -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
@@ -48,7 +48,8 @@ echo "language=pt_BR" >> /etc/asterisk/iax_general_custom.conf
 sed -i '/defaultlanguage=pt_BR/d' /etc/asterisk/asterisk.conf
 echo "defaultlanguage=pt_BR" >> /etc/asterisk/asterisk.conf
 echo ""
-#echo "Instalando codec g729"
+echo "Instalando codec g729"
+yum install asterisk-codec-g729 -y
 #echo ""
 echo "Instalando tratamento Hangup Cause"
 echo ""
