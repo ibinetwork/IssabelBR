@@ -21,7 +21,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter lame -y
+yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter socat lame -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
