@@ -8,6 +8,7 @@ echo "+-+-+-+-+-+-+-+-+-+-+-+";
 echo ""
 echo "Update para corrigir Balance Trunk Issabel"
 echo ""
+sleep 10
 yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils -y
 updatedb
 svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
@@ -28,3 +29,4 @@ echo "+-+-+-+-+-+-+-+-+-+-+-+";
 echo ""
 echo "Update para corrigir Balance Trunk Issabel - INSTALADO COM SUCESSO!"
 echo ""
+sleep 10
