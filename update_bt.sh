@@ -19,7 +19,7 @@ sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_over
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabelpbx.conf
 echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabelpbx.conf
 rsync --progress -r /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
-rsync --progress -r /usr/src/IssabelBR/repo/ /etc/yum.repo.d/
+rsync --progress -r /usr/src/IssabelBR/repo/ /etc/yum.repos.d/
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 rm -Rf /usr/src/IssabelBR
 yum update -y
