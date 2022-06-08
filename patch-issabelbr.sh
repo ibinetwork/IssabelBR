@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.2.2"
+versao="1.2.3"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -98,11 +98,18 @@ echo "Instalando sngrep"
 echo "" 
 rm -Rf /etc/yum.repos.d/irontec.repo
 cat > /etc/yum.repos.d/irontec.repo <<EOF
-[irontec]
-name=Irontec RPMs repository
-baseurl=http://packages.irontec.com/centos/\$releasever/\$basearch/
+[copr:copr.fedorainfracloud.org:irontec:sngrep]
+name=Copr repo for sngrep owned by irontec
+baseurl=https://download.copr.fedorainfracloud.org/results/irontec/sngrep/epel-7-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/irontec/sngrep/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
 EOF
-rpm --import http://packages.irontec.com/public.key
+rpm --import https://download.copr.fedorainfracloud.org/results/irontec/sngrep/pubkey.gpg
 yum install sngrep -y
 echo ""
 #wget https://bintray.com/ookla/rhel/rpm -O /etc/yum.repos.d/bintray-ookla-rhel.repo
