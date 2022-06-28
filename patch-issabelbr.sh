@@ -100,7 +100,7 @@ rm -Rf /etc/yum.repos.d/irontec.repo
 cat > /etc/yum.repos.d/irontec.repo <<EOF
 [copr:copr.fedorainfracloud.org:irontec:sngrep]
 name=Copr repo for sngrep owned by irontec
-baseurl=https://download.copr.fedorainfracloud.org/results/irontec/sngrep/epel-7-$basearch/
+baseurl=https://download.copr.fedorainfracloud.org/results/irontec/sngrep/epel-7-\$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
