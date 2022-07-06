@@ -97,10 +97,9 @@ echo ""
 echo "Instalando sngrep"
 echo "" 
 rm -Rf /etc/yum.repos.d/irontec.repo
-cat > /etc/yum.repos.d/irontec.repo <<EOF
-[copr:copr.fedorainfracloud.org:irontec:sngrep]
+echo '[copr:copr.fedorainfracloud.org:irontec:sngrep]
 name=Copr repo for sngrep owned by irontec
-baseurl=https://download.copr.fedorainfracloud.org/results/irontec/sngrep/epel-7-\$basearch/
+baseurl=https://download.copr.fedorainfracloud.org/results/irontec/sngrep/epel-7-$basearch/
 type=rpm-md
 skip_if_unavailable=True
 gpgcheck=1
@@ -108,7 +107,7 @@ gpgkey=https://download.copr.fedorainfracloud.org/results/irontec/sngrep/pubkey.
 repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
-EOF
+' > /etc/yum.repos.d/irontec.repo
 rpm --import https://download.copr.fedorainfracloud.org/results/irontec/sngrep/pubkey.gpg
 yum install sngrep -y
 echo ""
