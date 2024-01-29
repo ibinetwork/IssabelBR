@@ -21,7 +21,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter socat lame -y
+yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter socat lame -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
@@ -30,7 +30,7 @@ yum -y update && yum -y upgrade
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
 echo ""
-svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
+git clone https://github.com/ibinetwork/IssabelBR.git /usr/src/IssabelBR
 cp /var/www/html/modules/billing_report/index.php /var/www/html/modules/billing_report/index.php.bkp
 #cp /var/www/html/modules/cdrreport/index.php /var/www/html/modules/cdrreport/index.php.bkp
 cp /var/www/html/modules/monitoring/index.php /var/www/html/modules/monitoring/index.php.bkp
