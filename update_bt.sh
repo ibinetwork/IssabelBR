@@ -12,6 +12,8 @@ sleep 10
 yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils -y
 yum downgrade issabel-callcenter-4.0.0-4 -y
 amportal a ma install trunkbalance
+amportal a ma upgradeall
+amportal reload
 updatedb
 git clone https://github.com/ibinetwork/IssabelBR.git /usr/src/IssabelBR
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
