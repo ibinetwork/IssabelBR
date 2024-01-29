@@ -9,11 +9,11 @@ echo ""
 echo "Update para corrigir Balance Trunk Issabel"
 echo ""
 sleep 10
-yum install wget mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils -y
+yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils -y
 yum downgrade issabel-callcenter-4.0.0-4 -y
 amportal a ma install trunkbalance
 updatedb
-svn co https://github.com/ibinetwork/IssabelBR/trunk/ /usr/src/IssabelBR
+git clone https://github.com/ibinetwork/IssabelBR.git /usr/src/IssabelBR
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabel.conf
 sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_override_issabelpbx.conf
