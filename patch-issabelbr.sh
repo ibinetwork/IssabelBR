@@ -21,7 +21,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
-yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter socat lame -y
+yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter socat lame dos2unix -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
@@ -129,6 +129,9 @@ echo "ALTERANDO MUSICONHOLD AGENTS"
 echo ""
 sed -i -r 's/;musiconhold=default/musiconhold=none/' /etc/asterisk/agents.conf
 rm -Rf /usr/src/IssabelBR
+amportal a ma install trunkbalance
+amportal a ma upgradeall
+amportal reload
 amportal restart
 clear
 echo " _____               _          _    _    ____  _____  "
