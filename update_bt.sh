@@ -10,6 +10,7 @@ echo "Update para corrigir Balance Trunk Issabel"
 echo ""
 sleep 10
 yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils -y
+yum update -y
 yum downgrade issabel-callcenter-4.0.0-4 -y
 amportal a ma install trunkbalance
 amportal a ma upgradeall
