@@ -14,6 +14,9 @@ sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils -y
 yum update -y
+sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
+sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
+sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 yum downgrade issabel-callcenter-4.0.0-4 -y
 amportal a ma install trunkbalance
 amportal a ma upgradeall
@@ -32,6 +35,9 @@ sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 rm -Rf /usr/src/IssabelBR
 yum update -y
+sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
+sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
+sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 amportal restart
 clear
 echo "+-+-+-+-+-+-+-+-+-+-+-+";
