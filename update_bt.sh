@@ -9,11 +9,13 @@ echo ""
 echo "Update para corrigir Balance Trunk Issabel"
 echo ""
 sleep 10
+sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils yum-utils -y
 yum update -y
+sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
@@ -29,12 +31,14 @@ sed -i '/extensions_tratamento_hangupcause.conf/d' /etc/asterisk/extensions_over
 echo "#include /etc/asterisk/extensions_tratamento_hangupcause.conf" >> /etc/asterisk/extensions_override_issabelpbx.conf
 rsync --progress -r /usr/src/IssabelBR/etc/asterisk/ /etc/asterisk/
 rsync --progress -r /usr/src/IssabelBR/repo/ /etc/yum.repos.d/
+sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 chown asterisk.asterisk /etc/asterisk/extensions_tratamento_hangupcause.conf
 rm -Rf /usr/src/IssabelBR
 yum update -y
+sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
