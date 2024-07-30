@@ -12,7 +12,7 @@ sleep 10
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
-yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils -y
+yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync screen htop subversion deltarpm dos2unix bind-utils yum-utils -y
 yum update -y
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
