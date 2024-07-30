@@ -21,6 +21,7 @@ echo "INICIANDO O PROCESSO..."
 echo ""
 echo "Instalando ferramentas úteis..."
 echo ""
+sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
@@ -30,6 +31,7 @@ echo ""
 echo "Atualizando o sistema..."
 echo ""
 yum -y update && yum -y upgrade
+sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
@@ -134,6 +136,7 @@ echo ""
 echo "ALTERANDO MUSICONHOLD AGENTS"
 echo ""
 sed -i -r 's/;musiconhold=default/musiconhold=none/' /etc/asterisk/agents.conf
+sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
