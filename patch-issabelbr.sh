@@ -25,7 +25,7 @@ sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
-yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter socat lame dos2unix yum-utils -y
+yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter socat lame dos2unix yum-utils yum-updateonboot -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
