@@ -1,5 +1,5 @@
 #!/bin/bash
-versao="1.2.3"
+versao="4.2.4"
 clear
 echo " _____               _          _    _    ____  _____  "
 echo "|_   _|             | |v$versao "' | |/\| |/\|  _ \|  __ \ '
@@ -49,12 +49,12 @@ echo ""
 echo "Instalando audio em Português Brasil"
 echo ""
 rsync --progress -r -u /usr/src/IssabelBR/audio/ /var/lib/asterisk/sounds/
-sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
-echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
-sed -i '/language=pt_BR/d' /etc/asterisk/iax_general_custom.conf
-echo "language=pt_BR" >> /etc/asterisk/iax_general_custom.conf
-sed -i '/defaultlanguage=pt_BR/d' /etc/asterisk/asterisk.conf
-echo "defaultlanguage=pt_BR" >> /etc/asterisk/asterisk.conf
+#sed -i '/language=pt_BR/d' /etc/asterisk/sip_general_custom.conf
+#echo "language=pt_BR" >> /etc/asterisk/sip_general_custom.conf
+#sed -i '/language=pt_BR/d' /etc/asterisk/iax_general_custom.conf
+#echo "language=pt_BR" >> /etc/asterisk/iax_general_custom.conf
+#sed -i '/defaultlanguage=pt_BR/d' /etc/asterisk/asterisk.conf
+#echo "defaultlanguage=pt_BR" >> /etc/asterisk/asterisk.conf
 echo ""
 echo "Instalando codec g729"
 yum install asterisk-codec-g729 -y
@@ -133,6 +133,13 @@ sed -i -r 's/666699/33697B/' /var/www/html/admin/assets/css/mainstyle.css
 #sed -i '/neo-modal-issabel-popup-content/d' /var/www/html/themes/tenant/_common/index.tpl
 #sed -i '/neo-modal-issabel-popup-blockmask/d' /var/www/html/themes/tenant/_common/index.tpl
 echo ""
+echo "REMOVENDO VERSÕES ANTIGAS DO KERNEL"
+package-cleanup --oldkernels --count=2 -y
+yum update -y
+echo ""
+echo "EFETUANDO DOWNGRADE DO MÓDULO CALL CENTER PARA VERSÃO 4.0.4"
+yum downgrade issabel-callcenter-4.0.0-4 -y
+echo ""
 echo "ALTERANDO MUSICONHOLD AGENTS"
 echo ""
 sed -i -r 's/;musiconhold=default/musiconhold=none/' /etc/asterisk/agents.conf
@@ -140,6 +147,11 @@ sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
+echo ""
+echo "INSTALANDO VERSÃO NOVA DOS RELATÓRIOS DE LIGAÇÕES E GRAVAÇÕES DE LIGAÇÕES"
+yum --enablerepo=issabel-beta update issabel-reports -y
+rsync --progress -r /usr/src/IssabelBR/web2/ /var/www/html/
+echo ""
 rm -Rf /usr/src/IssabelBR
 amportal a ma install trunkbalance
 amportal a ma upgradeall
