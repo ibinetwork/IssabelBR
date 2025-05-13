@@ -150,7 +150,7 @@ sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 echo ""
 echo "INSTALANDO VERSÃO NOVA DOS RELATÓRIOS DE LIGAÇÕES E GRAVAÇÕES DE LIGAÇÕES"
 yum --enablerepo=issabel-beta update issabel-reports -y
-rsync --progress -r /usr/src/IssabelBR/web2/ /var/www/html/
+rsync --progress -r /usr/src/IssabelBR/web2/ /var/www/html/modules/
 echo ""
 rm -Rf /usr/src/IssabelBR
 amportal a ma install trunkbalance
