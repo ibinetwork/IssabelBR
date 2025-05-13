@@ -27,6 +27,7 @@ sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
 yum install epel-release -y
 yum install wget git mtr vim mlocate nmap tcpdump mc nano lynx rsync minicom screen htop subversion deltarpm issabel-callcenter-4.0.0.4 socat lame dos2unix yum-utils yum-updateonboot p7zip p7zip-plugins cowsay -y
+yum downgrade issabel-callcenter-4.0.0-4 -y
 updatedb
 echo ""
 echo "Atualizando o sistema..."
