@@ -56,5 +56,8 @@ $arrLangModule = array(
   "Spreadsheet" => "Planilha",
   "Page" => "Página",
   "CDR Report" => "Relatórios",
+  "Delete" => "Apagar",
+  "Limit" => "Limite",
+  "src" => "Origem",
 );
 ?>
