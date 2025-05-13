@@ -56,5 +56,7 @@ $arrLangModule=array(
 'Recording missing' => 'Gravação perdida',
 "Deleted" => "Apagada",
 "Limit" => "Limite",
+"Delete" => "Apagar",
+"src" => "Origem",
 );
 ?>
