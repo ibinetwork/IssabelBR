@@ -34,11 +34,11 @@ echo "Atualizando o sistema..."
 echo ""
 git clone https://github.com/ibinetwork/IssabelBR.git /usr/src/IssabelBR
 rsync --progress -r /usr/src/IssabelBR/repo/ /etc/yum.repos.d/
-yum -y update && yum -y upgrade
 sed -i s/http:/https:/g /etc/yum.repos.d/C*.repo
 sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/C*.repo
 sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/C*.repo
 sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/C*.repo
+yum -y update && yum -y upgrade
 echo ""
 echo "Instalando patch de idiomas, cdr e bilhetagem..."
 echo ""
